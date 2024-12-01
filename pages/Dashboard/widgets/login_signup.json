@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 102,
+  "bottomRow": 114,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
   "dynamicBindingPathList": [
@@ -31,7 +31,7 @@
   "isSearchWildcard": true,
   "isVisible": true,
   "key": "8gi7rsjput",
-  "leftColumn": 7,
+  "leftColumn": 15,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 89,
@@ -44,14 +44,14 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 31,
+  "rightColumn": 39,
   "srcDoc": {
     "css": ".app {\n\twidth: calc(var(--appsmith-ui-width) * 1px);\n\tjustify-content: center;\n\tborder-radius: 0px;\n\tborder: none;\n}\n\n.tip-container {\n  margin-bottom: 20px;\n}\n\n.tip-container h2 {\n  margin-bottom: 20px;\n\tfont-size: 16px;\n\tfont-weight: 700;\n}\n\n.tip-header {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: baseline;\n}\n\n.tip-header div {\n\tcolor: #999;\n}\n\n.button-container {\n\ttext-align: right;\t\n}\n\n.button-container button {\n  margin: 0 10px;\n\tborder-radius: var(--appsmith-theme-borderRadius) !important;\n}\n\n.button-container button.primary {\n\tbackground: var(--appsmith-theme-primaryColor) !important;\n}\n\n.button-container button.reset:not([disabled]) {\n\tcolor: var(--appsmith-theme-primaryColor) !important;\n\tborder-color: var(--appsmith-theme-primaryColor) !important;\n}",
     "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
     "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\n\nfunction App() {\n  const [currentIndex, setCurrentIndex] = React.useState(0);\n  const handleNext = () => {\n    setCurrentIndex(prevIndex => (prevIndex + 1) % appsmith.model.tips.length);\n  };\n  const handleReset = () => {\n    setCurrentIndex(0);\n    appsmith.triggerEvent(\"onResetClick\");\n  };\n  return /*#__PURE__*/React.createElement(Card, {\n    className: \"app\",\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-container\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"tip-header\"\n  }, /*#__PURE__*/React.createElement(\"h2\", null, \"Custom Widget\"), /*#__PURE__*/React.createElement(\"div\", null, currentIndex + 1, \" / \", appsmith.model.tips.length, \"  \")), /*#__PURE__*/React.createElement(Markdown, null, appsmith.model.tips[currentIndex])), /*#__PURE__*/React.createElement(\"div\", {\n    className: \"button-container\"\n  }, /*#__PURE__*/React.createElement(Button, {\n    className: \"primary\",\n    onClick: handleNext,\n    type: \"primary\"\n  }, \"Next Tip\"), /*#__PURE__*/React.createElement(Button, {\n\tclassName: \"reset\",\n\tdisabled: currentIndex === 0,\n    onClick: handleReset\n  }, \"Reset\")));\n}\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 65,
+  "topRow": 77,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
