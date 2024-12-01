@@ -7,11 +7,11 @@
     "navigationSetting": {
       "colorStyle": "light",
       "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "logoConfiguration": "logoOnly",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     },
     "themeSetting": {
@@ -41,11 +41,11 @@
     "navigationSetting": {
       "colorStyle": "light",
       "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
-      "navStyle": "sidebar",
-      "orientation": "side",
+      "logoConfiguration": "logoOnly",
+      "navStyle": "stacked",
+      "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     },
     "themeSetting": {
