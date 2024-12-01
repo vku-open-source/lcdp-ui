@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 268,
+  "bottomRow": 738,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 240,
+      "bottomRow": 710,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 240,
+      "minHeight": 710,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -57,13 +57,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 240,
+  "height": 710,
   "isCanvas": true,
   "isLoading": false,
   "key": "r1p3dkyime",
   "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
+  "minHeight": 420,
   "mobileBottomRow": 52,
   "mobileLeftColumn": 10,
   "mobileRightColumn": 34,
@@ -79,6 +80,6 @@
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "wpvaoulrdj",
-  "widgetName": "Modal1",
-  "width": 456
+  "widgetName": "ProvinceNews",
+  "width": 1056
 }

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_a8abd0c3-edde-4916-941a-2cd24e24e61c",
-  "id": "Dashboard_WarningProvince.getWarningProvince",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_2f3b38db-0860-468b-98eb-cf20ba4bb6b6",
+  "id": "Dashboard_WarningProvince.getWarningProvincesDict",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -10,7 +10,6 @@
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "Dashboard_WarningProvince",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -24,8 +23,8 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "WarningProvince.getWarningProvince",
-    "name": "getWarningProvince",
+    "fullyQualifiedName": "WarningProvince.getWarningProvincesDict",
+    "name": "getWarningProvincesDict",
     "pageId": "Dashboard",
     "userSetOnLoad": false
   }

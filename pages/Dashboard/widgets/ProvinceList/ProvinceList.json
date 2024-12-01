@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
+  "bottomRow": 66,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -102,7 +102,7 @@
   "itemSpacing": 8,
   "key": "blbw6cq8fu",
   "leftColumn": 40,
-  "listData": "{{WarningProvince.getWarningProvince.data}}",
+  "listData": "{{WarningProvince.getWarningProvincesList.data}}",
   "mainCanvasId": "hdc1ihb93j",
   "mainContainerId": "jl61orntxn",
   "minWidth": 450,
@@ -111,20 +111,22 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "originalBottomRow": 66,
+  "originalTopRow": 12,
   "pageSize": 10,
   "parentColumnSpace": 16.6875,
   "parentId": "0",
   "parentRowSpace": 10,
-  "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"province\"]  + `/`)}}",
+  "primaryKeys": "{{ProvinceList.listData.map((currentItem, currentIndex) => currentItem[\"province\"]  + `/`)}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 8,
+  "topRow": 12,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "d3zwh4rcje",
-  "widgetName": "List1"
+  "widgetName": "ProvinceList"
 }

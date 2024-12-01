@@ -26,7 +26,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "fwutpj1c7b",
+      "key": "mlfjc3simi",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -35,7 +35,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "jl61orntxn",
+      "parentId": "4re3wnf0h9",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -43,8 +43,8 @@
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
       "version": 1,
-      "widgetId": "hr34otr7xr",
-      "widgetName": "Canvas2"
+      "widgetId": "54ub53kz7n",
+      "widgetName": "Canvas5"
     }
   ],
   "containerStyle": "card",
@@ -62,14 +62,13 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isDeletable": false,
   "isListItemContainer": true,
   "isLoading": false,
   "isVisible": true,
-  "key": "txcpcx064l",
+  "key": "tzf868jkaf",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
@@ -80,7 +79,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "noContainerOffset": true,
-  "parentId": "hdc1ihb93j",
+  "parentId": "j3cyh7whe2",
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -89,6 +88,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "jl61orntxn",
-  "widgetName": "Container1"
+  "widgetId": "4re3wnf0h9",
+  "widgetName": "Container2"
 }
