@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_8562c72f-bf59-452b-924f-90435f493e62",
+  "id": "Dashboard_WarningProvince",
+  "unpublishedCollection": {
+    "name": "WarningProvince",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
