@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 14,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 56,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 7,
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
   "parentId": "0",
@@ -43,7 +43,7 @@
   "text": "Các tỉnh đang có nguy cơ thiên tai",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 7,
+  "topRow": 10,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

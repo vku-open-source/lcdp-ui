@@ -44,7 +44,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 30,
+  "rightColumn": 31,
   "srcDoc": {
     "css": ".app {\n\twidth: calc(var(--appsmith-ui-width) * 1px);\n\tjustify-content: center;\n\tborder-radius: 0px;\n\tborder: none;\n}\n\n.tip-container {\n  margin-bottom: 20px;\n}\n\n.tip-container h2 {\n  margin-bottom: 20px;\n\tfont-size: 16px;\n\tfont-weight: 700;\n}\n\n.tip-header {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: baseline;\n}\n\n.tip-header div {\n\tcolor: #999;\n}\n\n.button-container {\n\ttext-align: right;\t\n}\n\n.button-container button {\n  margin: 0 10px;\n\tborder-radius: var(--appsmith-theme-borderRadius) !important;\n}\n\n.button-container button.primary {\n\tbackground: var(--appsmith-theme-primaryColor) !important;\n}\n\n.button-container button.reset:not([disabled]) {\n\tcolor: var(--appsmith-theme-primaryColor) !important;\n\tborder-color: var(--appsmith-theme-primaryColor) !important;\n}",
     "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
