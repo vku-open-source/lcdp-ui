@@ -33,7 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ProvinceNews.name);\nstoreValue('CurrentProvince', \"\");\nstoreValue('currentProvince', currentItem.province);}}",
+  "onClick": "{{showModal(ProvinceNews.name);\nstoreValue('CurrentProvince', \"\");\nstoreValue('currentProvince', currentItem.province);\nnavigateTo(\"\", {}, 'SAME_WINDOW')}}",
   "parentColumnSpace": 6.6826171875,
   "parentId": "hr34otr7xr",
   "parentRowSpace": 10,
