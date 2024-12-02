@@ -1,0 +1,12 @@
+{
+  "data": {
+    "title": "hướng dẫn di tản12",
+    "type": "evacuation_guide",
+    "content": "ahdahdkahdkahdkahkda ",
+    "priority": "urgent",
+    "notificationChannels": {
+      "sms": false,
+      "email": true
+    }
+  }
+}

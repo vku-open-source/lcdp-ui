@@ -1,0 +1,12 @@
+{
+  "data": {
+    "title": "huong dan ",
+    "type": "safety_guide",
+    "content": "thong bao ",
+    "priority": "medium",
+    "notificationChannels": {
+      "sms": false,
+      "email": true
+    }
+  }
+}

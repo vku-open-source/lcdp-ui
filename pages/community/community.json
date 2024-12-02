@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_5a5ae874-a389-4055-bd70-53918d31cb9b",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_9d1e1c20-182d-4dbe-8fbf-cb1b719ee239",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 810,
+          "bottomRow": 940,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Dashboard",
-    "slug": "dashboard"
+    "name": "community",
+    "slug": "community"
   }
 }

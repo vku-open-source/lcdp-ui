@@ -19,29 +19,30 @@ export default {
 	},
 
 	signIn: async () => {
-		const password = inp_password.text;
-
-		const [user] = await findUserByEmail.run();
-
-		if (user && this.verifyHash(password, user?.password_hash)) {
-			storeValue('token', await this.createToken(user))
-				.then(() => updateLogin.run({
-				id: user.id
-			}))
-				.then(() => showAlert('Register Success', 'success'))
-		} else {
-			return showAlert('Invalid emaill/password combination', 'error');
+		try {
+			const res = await login.run();
+			storeValue('token', res.jwt);
+			showAlert("Login successfull");
+			navigateTo("Dashboard")
+		} catch {
+			showAlert("Invalid emaill/password", "error");
 		}
 	},
 
 	register: async () => {
-		const passwordHash = await this.generatePasswordHash();
-		const [user] = await createUser.run({passwordHash});
-		if (user) {
-			storeValue('token', await this.createToken(user))
-			showAlert('Register Success', 'success');
-		} else {
-			return showAlert('Error creating new user', 'error');
+		try {
+			const res = await register.run()
+			console.log(res)
+		} catch {
+			showAlert("error")
 		}
+		// const passwordHash = await this.generatePasswordHash();
+		// const [user] = await createUser.run({passwordHash});
+		// if (user) {
+			// storeValue('token', await this.createToken(user))
+			// showAlert('Register Success', 'success');
+		// } else {
+			// return showAlert('Error creating new user', 'error');
+		// }
 	},
 }
