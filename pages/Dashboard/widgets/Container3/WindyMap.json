@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 79,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ],\n\t\"BASE_URL\":\"{{Constants.BACKEND_BASE_URL}}\"\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "r79t3lz0zh",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 7,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 16.6875,
+  "parentId": "gqbtvjfmtg",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 40,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<html>\n    <head>\n        <meta\n            name=\"viewport\"\n            content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"\n        />\n        <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"></script>\n        <script src=\"https://api.windy.com/assets/map-forecast/libBoot.js\"></script>\n        <style>\n            #windy {\n                width: 100%;\n                height: 100vh;\n            }\n        </style>\n    </head>\n    <body>\n        <div id=\"windy\"></div>\n        <script src=\"script.js\"></script>\n    </body>\n</html>",
+    "js": "const options = {\n  key: 'GYbeQaRYK4XVcRooZpEZ7kIHnp4xt1wF',\n  // Thay bằng API key của bạn\n  lat: 15.974971273737287,\n  lon: 108.25766301348376,\n  zoom: 6,\n  hourFormat: '12h'\n};\n\n// Hàm khởi tạo bản đồ Windy\nwindyInit(options, windyAPI => {\n  const {\n    map\n  } = windyAPI;\n\n  // Bản đồ ánh xạ loại cảnh báo tới biểu tượng\n  const mapping = {\n    warning_earthquake: `${appsmith.model.BASE_URL}/uploads/earthquake_logo_d58db80f3d.png`,\n    warning_flood: `${appsmith.model.BASE_URL}/uploads/house_flood_water_solid_f61cf3527f.svg`,\n    warning_default: './water_level.svg',\n    // Biểu tượng mặc định\n    warning_rain: `${appsmith.model.BASE_URL}/uploads/rain_91dc31877d.svg`,\n    water_level: {\n      1: `${appsmith.model.BASE_URL}/uploads/1_solid_da370ff8ab.svg`,\n      2: `${appsmith.model.BASE_URL}/uploads/2_solid_33cfd75c95.svg`,\n      3: `${appsmith.model.BASE_URL}/uploads/3_solid_2e0868382b.svg`\n    }\n  };\n  const getIconUrl = (type, warningLevel = null) => {\n    if (type === 'water_level' && warningLevel !== null) {\n      return mapping.water_level[warningLevel] || mapping.warning_default;\n    }\n    return mapping[type] || mapping.warning_default;\n  };\n  const addMarker = (lat, lon, label, type, warningLevel = null) => {\n    const iconUrl = getIconUrl(type, warningLevel);\n    const marker = L.marker([lat, lon], {\n      icon: L.icon({\n        iconUrl,\n        iconSize: [25, 25],\n        // Kích thước biểu tượng\n        iconAnchor: [12, 12] // Điểm neo\n      })\n    }).addTo(map);\n    marker.bindPopup(`<strong>${label}</strong><br>Type: ${type}${warningLevel ? `<br>Warning Level: ${warningLevel}` : ''}`);\n  };\n  const processWarnings = warnings => {\n    warnings.forEach(warning => {\n      const {\n        lat,\n        long,\n        label,\n        warning_type,\n        warning_level\n      } = warning;\n      if (!lat || !long) {\n        console.warn('Cảnh báo thiếu tọa độ:', warning);\n        return;\n      }\n      if (warning_type === 'water_level') {\n        addMarker(lat, long, label, warning_type, warning_level);\n      } else {\n        addMarker(lat, long, label, warning_type);\n      }\n    });\n  };\n  const fetchWarnings = async () => {\n    try {\n      const response = await fetch(`${appsmith.model.BASE_URL}/api/warning`);\n      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);\n      const data = await response.json();\n      if (data && data.data) {\n        processWarnings(data.data);\n      } else {\n        console.error('Phản hồi API không hợp lệ:', data);\n      }\n    } catch (error) {\n      console.error('Lỗi khi lấy dữ liệu cảnh báo:', error);\n    }\n  };\n\n  // Bắt đầu lấy dữ liệu cảnh báo\n  fetchWarnings();\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<html>\n    <head>\n        <meta\n            name=\"viewport\"\n            content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"\n        />\n        <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"></script>\n        <script src=\"https://api.windy.com/assets/map-forecast/libBoot.js\"></script>\n        <style>\n            #windy {\n                width: 100%;\n                height: 100vh;\n            }\n        </style>\n    </head>\n    <body>\n        <div id=\"windy\"></div>\n        <script src=\"script.js\"></script>\n    </body>\n</html>",
+    "js": "const options = {\n    key: 'GYbeQaRYK4XVcRooZpEZ7kIHnp4xt1wF', // Thay bằng API key của bạn\n    lat: 15.974971273737287,\n    lon: 108.25766301348376,\n    zoom: 6,\n    hourFormat: '12h',\n};\n\n// Hàm khởi tạo bản đồ Windy\nwindyInit(options, windyAPI => {\n    const { map } = windyAPI;\n\n    // Bản đồ ánh xạ loại cảnh báo tới biểu tượng\n    const mapping = {\n        warning_earthquake: `${appsmith.model.BASE_URL}/uploads/earthquake_logo_d58db80f3d.png`,\n        warning_flood: `${appsmith.model.BASE_URL}/uploads/house_flood_water_solid_f61cf3527f.svg`,\n        warning_default: './water_level.svg', // Biểu tượng mặc định\n\t\t\t\twarning_rain: `${appsmith.model.BASE_URL}/uploads/rain_91dc31877d.svg`,\n        water_level: {\n            1: `${appsmith.model.BASE_URL}/uploads/1_solid_da370ff8ab.svg`,\n            2: `${appsmith.model.BASE_URL}/uploads/2_solid_33cfd75c95.svg`,\n            3: `${appsmith.model.BASE_URL}/uploads/3_solid_2e0868382b.svg`,\n        },\n    };\n\n    const getIconUrl = (type, warningLevel = null) => {\n        if (type === 'water_level' && warningLevel !== null) {\n            return mapping.water_level[warningLevel] || mapping.warning_default;\n        }\n        return mapping[type] || mapping.warning_default;\n    };\n\n    const addMarker = (lat, lon, label, type, warningLevel = null) => {\n        const iconUrl = getIconUrl(type, warningLevel);\n\n        const marker = L.marker([lat, lon], {\n            icon: L.icon({\n                iconUrl,\n                iconSize: [25, 25], // Kích thước biểu tượng\n                iconAnchor: [12, 12], // Điểm neo\n            }),\n        }).addTo(map);\n\n        marker.bindPopup(`<strong>${label}</strong><br>Type: ${type}${warningLevel ? `<br>Warning Level: ${warningLevel}` : ''}`);\n    };\n\n\n    const processWarnings = warnings => {\n        warnings.forEach(warning => {\n            const { lat, long, label, warning_type, warning_level } = warning;\n\n            if (!lat || !long) {\n                console.warn('Cảnh báo thiếu tọa độ:', warning);\n                return;\n            }\n\n            if (warning_type === 'water_level') {\n                addMarker(lat, long, label, warning_type, warning_level);\n            } else {\n                addMarker(lat, long, label, warning_type);\n            }\n        });\n    };\n\n    const fetchWarnings = async () => {\n        try {\n            const response = await fetch(`${appsmith.model.BASE_URL}/api/warning`);\n            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);\n\n            const data = await response.json();\n            if (data && data.data) {\n                processWarnings(data.data);\n            } else {\n                console.error('Phản hồi API không hợp lệ:', data);\n            }\n        } catch (error) {\n            console.error('Lỗi khi lấy dữ liệu cảnh báo:', error);\n        }\n    };\n\n    // Bắt đầu lấy dữ liệu cảnh báo\n    fetchWarnings();\n});\n"
+  },
+  "version": 1,
+  "widgetId": "om5nji6m2b",
+  "widgetName": "WindyMap"
+}

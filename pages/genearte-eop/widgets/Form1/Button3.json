@@ -1,10 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 69,
+  "bottomRow": 37,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
@@ -15,37 +14,31 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "dhwydlfyg8",
-  "leftColumn": 45,
+  "key": "adtuu836ws",
+  "leftColumn": 30,
   "minWidth": 120,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 31,
-  "mobileRightColumn": 47,
-  "mobileTopRow": 18,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 46,
+  "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(ProvinceNews.name);}}",
-  "originalBottomRow": 40,
-  "originalTopRow": 36,
-  "parentId": "0zlmxfvjtg",
+  "originalBottomRow": 37,
+  "originalTopRow": 33,
+  "parentId": "dqcodtcsua",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
+  "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
-  "text": "Close",
-  "topRow": 65,
+  "rightColumn": 46,
+  "text": "Reset",
+  "topRow": 33,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "5pbxobvh2q",
-  "widgetName": "Button1"
+  "widgetId": "ud190d413y",
+  "widgetName": "Button3"
 }

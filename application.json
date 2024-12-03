@@ -26,15 +26,27 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Authentication",
-      "isDefault": false
-    },
-    {
       "id": "Dashboard",
       "isDefault": true
     },
     {
+      "id": "Authentication",
+      "isDefault": false
+    },
+    {
       "id": "community",
+      "isDefault": false
+    },
+    {
+      "id": "genearte-eop",
+      "isDefault": false
+    },
+    {
+      "id": "confirm-eop",
+      "isDefault": false
+    },
+    {
+      "id": "confirmed-eop",
       "isDefault": false
     }
   ],

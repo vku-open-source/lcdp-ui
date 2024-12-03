@@ -1,0 +1,12 @@
+{   
+    "inputs": {
+			"EMERGENCY_OPERATIONS_PLAN": {emergencyData},
+        "FLOOD_DATA": {floodData},
+        "RESOURCE_DATA": {resourceData}
+    },
+    "query": "give me task list",
+    "response_mode": "streaming",
+    "conversation_id": "",
+    "user": "test",
+    "files": []
+}

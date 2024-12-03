@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_69cc2e72-15b1-44ec-bdd7-487d5c902d13",
-  "id": "community_getAllcommunity",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_0375b418-1fdc-4f4b-a2ff-907075204352",
+  "id": "confirmed-eop_get_eop_tasks",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/communities",
+      "path": "/eop-tasks",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -25,7 +25,11 @@
       "queryParameters": [
         {
           "key": "populate",
-          "value": "*"
+          "value": "eop"
+        },
+        {
+          "key": "filters[eop][documentId][$eq]",
+          "value": "kn4nhug7gd8k89go6ms0n6vo"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -37,10 +41,14 @@
       "name": "strapi",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "executeOnLoad": true,
-    "name": "getAllcommunity",
-    "pageId": "community",
+    "name": "get_eop_tasks",
+    "pageId": "confirmed-eop",
     "userSetOnLoad": false
   }
 }

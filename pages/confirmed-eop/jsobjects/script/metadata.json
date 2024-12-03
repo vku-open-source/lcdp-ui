@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_aa47e84b-9007-40cc-9d6b-62bea31bee3f",
+  "id": "confirmed-eop_script",
+  "unpublishedCollection": {
+    "name": "script",
+    "pageId": "confirmed-eop",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
