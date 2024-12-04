@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_aaf64840-2231-46f1-a085-427cf41f8422",
+  "id": "Dashboard_ChatBot",
+  "unpublishedCollection": {
+    "name": "ChatBot",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "question",
+        "value": "\"Thời tiết ở Huế hôm nay thế nào\""
+      }
+    ]
+  }
+}

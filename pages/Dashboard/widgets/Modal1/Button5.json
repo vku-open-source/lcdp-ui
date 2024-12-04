@@ -1,12 +1,12 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 40,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
-  "displayName": "Button",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -20,35 +20,30 @@
       "key": "onClick"
     }
   ],
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
   "isDefaultClickDisabled": true,
-  "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "d80868s2dr",
-  "leftColumn": 2,
-  "onClick": "{{functions.signIn();}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 40,
-  "parentColumnSpace": 18.1875,
-  "parentId": "8rq3ao3yqz",
-  "parentRowSpace": 10,
+  "key": "mocdg5jrww",
+  "leftColumn": 61,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal(Modal1.name);}}",
+  "parentId": "rfryjplrcu",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
-  "rightColumn": 59,
-  "searchTags": [
-    "click",
-    "submit"
-  ],
-  "text": "SIGN IN",
-  "tooltip": "",
-  "topRow": 39,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Close",
+  "topRow": 36,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "voz3dh2wjt",
-  "widgetName": "btn_signIn"
+  "widgetId": "rq2q6x1etg",
+  "widgetName": "Button5"
 }
