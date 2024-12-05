@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_21848ce9-1ffb-4e2f-bb87-c146a21320ee",
+  "id": "Dashboard_LatLongWarning",
+  "unpublishedCollection": {
+    "name": "LatLongWarning",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 50,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 270,
+      "bottomRow": 420,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -46,7 +46,7 @@
       "noPad": true,
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "d3zwh4rcje",
+      "parentId": "eo97pkkemw",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -54,8 +54,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "hdc1ihb93j",
-      "widgetName": "Canvas1"
+      "widgetId": "d4xcrkehnu",
+      "widgetName": "Canvas1Copy"
     }
   ],
   "currentItemsView": "{{[]}}",
@@ -70,9 +70,6 @@
       "key": "triggeredItemView"
     },
     {
-      "key": "primaryKeys"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -83,6 +80,9 @@
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "primaryKeys"
     }
   ],
   "dynamicPropertyPathList": [
@@ -102,22 +102,22 @@
   "itemSpacing": 8,
   "key": "blbw6cq8fu",
   "leftColumn": 40,
-  "listData": "{{WarningProvince.getWarningProvincesList.data}}",
-  "mainCanvasId": "hdc1ihb93j",
-  "mainContainerId": "jl61orntxn",
+  "listData": "{{LatLongWarning.getLatLongWarningList.data}}",
+  "mainCanvasId": "d4xcrkehnu",
+  "mainContainerId": "47tc1c6cwj",
   "minWidth": 450,
   "mobileBottomRow": 47,
   "mobileLeftColumn": 39,
   "mobileRightColumn": 63,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 46,
-  "originalTopRow": 14,
-  "pageSize": 4,
+  "originalBottomRow": 50,
+  "originalTopRow": 8,
+  "pageSize": 8,
   "parentColumnSpace": 16.6875,
   "parentId": "gqbtvjfmtg",
   "parentRowSpace": 10,
-  "primaryKeys": "{{ProvinceList.listData.map((currentItem, currentIndex) => currentItem[\"province\"]  + `/`)}}",
+  "primaryKeys": "{{LatLongList.listData.map((currentItem, currentIndex) =>currentIndex)}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
@@ -127,6 +127,6 @@
   "topRow": 8,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "d3zwh4rcje",
-  "widgetName": "ProvinceList"
+  "widgetId": "eo97pkkemw",
+  "widgetName": "LatLongList"
 }
