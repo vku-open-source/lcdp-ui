@@ -102,7 +102,7 @@
   "itemSpacing": 8,
   "key": "blbw6cq8fu",
   "leftColumn": 40,
-  "listData": "{{LatLongWarning.getLatLongWarningList.data}}",
+  "listData": "{{VNDMSWarning.getVNDMSWarningList.data}}",
   "mainCanvasId": "d4xcrkehnu",
   "mainContainerId": "47tc1c6cwj",
   "minWidth": 450,
