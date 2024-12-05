@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_fee608f2-5c86-4d2f-b483-29e772e7c566",
+  "id": "post_community_form_post_new_community",
+  "unpublishedCollection": {
+    "name": "post_new_community",
+    "pageId": "post_community_form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

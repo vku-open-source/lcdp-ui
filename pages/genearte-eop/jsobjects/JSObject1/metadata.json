@@ -6,6 +6,11 @@
     "pageId": "genearte-eop",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "floodData",
+        "value": "''"
+      }
+    ]
   }
 }

@@ -12,7 +12,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "navigateToCommunity"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "navigateToLogin"

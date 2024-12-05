@@ -24,6 +24,10 @@
       ],
       "queryParameters": [
         {
+          "key": "filters[type][$ne]",
+          "value": "emergency_alert"
+        },
+        {
           "key": "populate",
           "value": "*"
         }

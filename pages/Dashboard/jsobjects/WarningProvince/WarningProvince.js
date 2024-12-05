@@ -38,6 +38,7 @@ export default {
             });
           });
         });
+				
 
         this.myVar1 = groupedByProvince;
         return groupedByProvince;

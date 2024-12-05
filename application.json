@@ -48,6 +48,14 @@
     {
       "id": "confirmed-eop",
       "isDefault": false
+    },
+    {
+      "id": "post_community_form",
+      "isDefault": false
+    },
+    {
+      "id": "admin_confirm_post",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

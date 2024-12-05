@@ -1,0 +1,13 @@
+{
+  "data": {
+    "title": "thong bao khan ",
+    "type": "emergency_alert",
+    "content": "thong bao ",
+    "priority": "urgent",
+		"location":"tran cao van",
+    "notificationChannels": {
+      "sms": false,
+      "email": true
+    }
+  }
+}

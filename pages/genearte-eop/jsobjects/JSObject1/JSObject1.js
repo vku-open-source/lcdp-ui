@@ -1,4 +1,5 @@
-export default {
+export default  {
+	floodData: '',
 	Button2onClick () {
 		//	write code here
 		console.log('success')
@@ -9,9 +10,16 @@ export default {
 		// const data = res.data
 		// 
 		// showAlert(data.documentId, 'info')
-		navigateTo("confirm-eop", {
-			documentId: "kn4nhug7gd8k89go6ms0n6vo"
+		
+		// this.floodData = '';
+		// navigateTo("confirm-eop", {
+			// documentId: "kn4nhug7gd8k89go6ms0n6vo"
+		// })
+		
+		const res = get_eop.run({
+			id: "kn4nhug7gd8k89go6ms0n6vo"
 		})
+		return res
 	},
 
 }
