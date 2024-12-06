@@ -3,8 +3,9 @@ export default {
     let VNDMSWarningList = await vndms_warnings.run();
     let response = VNDMSWarningList.data;
 
-    const sourceRegex = /detailrain\(`\d+`,`(.*?)`,\d+\)/;
-    const siteRegex = /Mã trạm:\s*<b>(.*?)<\/b>/;
+    // Cập nhật regex
+    const sourceRegex = /detailrain\(`\d+`,`([^`]+)`/;
+    const siteRegex = /Mã trạm:\s*<b>(\d+)<\/b>/;
 
     const seenLabels = new Set();
 
@@ -12,6 +13,7 @@ export default {
       item.data.map(subItem => {
         const popupInfo = subItem.popupInfo;
 
+        // Áp dụng regex
         const sourceMatch = popupInfo.match(sourceRegex);
         const siteMatch = popupInfo.match(siteRegex);
 
@@ -23,12 +25,12 @@ export default {
       })
     )
     .filter(item => {
-      const label = item.label; 
+      const label = item.label;
       if (!seenLabels.has(label)) {
-        seenLabels.add(label); 
-        return true; 
+        seenLabels.add(label);
+        return true;
       }
-      return false; 
+      return false;
     });
 
     return uniqueData;

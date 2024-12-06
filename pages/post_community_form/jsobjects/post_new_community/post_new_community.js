@@ -5,7 +5,7 @@ export default {
       // Thu thập dữ liệu từ các widget
       const data = {
         title: title.text, // Lấy Tiêu đề
-				location:location1.text,
+				location:map,
         type: "emergency_alert", // Mặc định "emergency_alert"
         content: content.text, // Nội dung từ Rich Text Editor
         priority: "urgent",
