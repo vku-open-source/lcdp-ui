@@ -2,8 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 84,
-  "defaultSelectedValues": "email",
+  "bottomRow": 94,
+  "defaultSelectedValues": "{\nvalue:notification_channels.options[0].value\n}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,11 +13,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "options"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSelectionChange"
@@ -44,15 +40,24 @@
   "mobileTopRow": 46,
   "needsErrorInfo": false,
   "onSelectionChange": "{{}}",
-  "options": "[\n  {\n    \"label\": \"sms\",\n    \"value\": \"sms\"\n  },\n  {\n    \"label\": \"email\",\n    \"value\": \"email\"\n  }\n]",
-  "originalBottomRow": 84,
-  "originalTopRow": 77,
+  "options": [
+    {
+      "label": "sms",
+      "value": "sms"
+    },
+    {
+      "label": "email",
+      "value": "email"
+    }
+  ],
+  "originalBottomRow": 94,
+  "originalTopRow": 87,
   "parentColumnSpace": 11.951171875,
   "parentId": "mjwf95d7q7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 17,
-  "topRow": 77,
+  "topRow": 87,
   "type": "CHECKBOX_GROUP_WIDGET",
   "version": 2,
   "widgetId": "2fnjybet7t",
