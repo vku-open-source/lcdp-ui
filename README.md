@@ -1,11 +1,73 @@
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+# Emergix - Frontend (AppSmith)
 
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
+> [AppSmith](https://www.appsmith.com/) is a dynamic solution built to simplify workflows and enhance productivity for businesses and teams. This platform integrates essential tools into an intuitive interface, enabling seamless collaboration, automation, and data management to drive efficiency and success.
 
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
+---
 
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
+## Demo
 
-##### You can visit the application using the below link
+- [Link](http://34.67.28.143/app/olp-oss-application/dashboard-674b5eaa29bd2146155b36c8?branch=master)
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://34.67.28.143/applications/674b5eaa29bd2146155b36c6/pages/674b5eaa29bd2146155b36c8) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://34.67.28.143/applications/674b5eaa29bd2146155b36c6/pages/674b5eaa29bd2146155b36c8/edit)
+---
+
+## Getting Started
+
+### Prerequisites
+List any software/tools that need to be installed before using the repository:
+- Appsmith (Cloud or Self-hosted)
+- Node.js (if applicable)
+- Docker (optional)
+
+### Installation
+
+Follow these steps to set up the project:
+
+1. **Install Appsmith** 
+   If you don’t have Appsmith installed yet, choose one of the following methods:
+   - **Cloud**: Sign up for a free account at [Appsmith Cloud](https://www.appsmith.com/).
+   - **Self-hosted**: Follow the [official installation guide](https://docs.appsmith.com/getting-started/setup/installation-guides) to install Appsmith on your local machine or server using Docker or Kubernetes.
+
+2. **Clone the Repository**
+   Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/vku-open-source/lcdp-ui.git
+   cd lcdp-ui
+   ```
+   
+3. **Import the Appsmith application**
+You can choose one of the below ways to import an Appsmith application:
+    - Import from an application JSON file
+    - Import from a Git Repository
+ 
+    a. **Import from a application JSON file**
+
+    1. Go to your workspace homepage and navigate to the menu button of the workspace.
+    2. Click the menu button (next to +NEW) and select the "Import" option. 
+    3. In the import pop-up window, click on import from file and pick the JSON file `export.json`. 
+    4. Once the file is imported, you can see a datasource configuration Modal (if the imported app had a datasource connection) where you can configure the datasources used by the imported application.
+
+    b. **Import from a Git Repository**
+
+    - Firstly you should folk this repository
+    - Then follow the (detail tutorial)[https://docs.appsmith.com/advanced-concepts/version-control-with-git/import-from-repository] to import from a Git repository
+    
+4. **Test the application**
+
+- Open the imported application in Appsmith
+- Choose "Edit" to edit the application
+- Or choose "Launch" to test the application
+
+## Contributing
+
+Outline guidelines for contributing to the project:
+
+1. Fork the repostiory
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Cmmoit changes and push:
+    ```bash
+    git push origin feature-name
+    ```
+4. Submit a pull request
