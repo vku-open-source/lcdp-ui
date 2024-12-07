@@ -5,7 +5,8 @@ export default {
 
     // Cập nhật regex
     const sourceRegex = /detailrain\(`\d+`,`([^`]+)`/;
-    const siteRegex = /Mã trạm:\s*<b>(\d+)<\/b>/;
+    const siteRegex = /detailrain\(`(\d+)`,/;
+
 
     const seenLabels = new Set();
 
