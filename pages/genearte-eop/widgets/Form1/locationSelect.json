@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ledhutqfbc",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Địa điểm",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 31,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 12.3291015625,
+  "parentId": "dqcodtcsua",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 51,
+  "serverSideFiltering": false,
+  "sourceData": "[\n    {\n        \"name\": \"Thành phố Hà Nội\",\n        \"code\": \"thanh_pho_ha_noi\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Giang\",\n        \"code\": \"tinh_ha_giang\"\n    },\n    {\n        \"name\": \"Tỉnh Cao Bằng\",\n        \"code\": \"tinh_cao_bang\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Kạn\",\n        \"code\": \"tinh_bac_kan\"\n    },\n    {\n        \"name\": \"Tỉnh Tuyên Quang\",\n        \"code\": \"tinh_tuyen_quang\"\n    },\n    {\n        \"name\": \"Tỉnh Lào Cai\",\n        \"code\": \"tinh_lao_cai\"\n    },\n    {\n        \"name\": \"Tỉnh Điện Biên\",\n        \"code\": \"tinh_dien_bien\"\n    },\n    {\n        \"name\": \"Tỉnh Lai Châu\",\n        \"code\": \"tinh_lai_chau\"\n    },\n    {\n        \"name\": \"Tỉnh Sơn La\",\n        \"code\": \"tinh_son_la\"\n    },\n    {\n        \"name\": \"Tỉnh Yên Bái\",\n        \"code\": \"tinh_yen_bai\"\n    },\n    {\n        \"name\": \"Tỉnh Hoà Bình\",\n        \"code\": \"tinh_hoa_binh\"\n    },\n    {\n        \"name\": \"Tỉnh Thái Nguyên\",\n        \"code\": \"tinh_thai_nguyen\"\n    },\n    {\n        \"name\": \"Tỉnh Lạng Sơn\",\n        \"code\": \"tinh_lang_son\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Ninh\",\n        \"code\": \"tinh_quang_ninh\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Giang\",\n        \"code\": \"tinh_bac_giang\"\n    },\n    {\n        \"name\": \"Tỉnh Phú Thọ\",\n        \"code\": \"tinh_phu_tho\"\n    },\n    {\n        \"name\": \"Tỉnh Vĩnh Phúc\",\n        \"code\": \"tinh_vinh_phuc\"\n    },\n    {\n        \"name\": \"Tỉnh Bắc Ninh\",\n        \"code\": \"tinh_bac_ninh\"\n    },\n    {\n        \"name\": \"Tỉnh Hải Dương\",\n        \"code\": \"tinh_hai_duong\"\n    },\n    {\n        \"name\": \"Thành phố Hải Phòng\",\n        \"code\": \"thanh_pho_hai_phong\"\n    },\n    {\n        \"name\": \"Tỉnh Hưng Yên\",\n        \"code\": \"tinh_hung_yen\"\n    },\n    {\n        \"name\": \"Tỉnh Thái Bình\",\n        \"code\": \"tinh_thai_binh\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Nam\",\n        \"code\": \"tinh_ha_nam\"\n    },\n    {\n        \"name\": \"Tỉnh Nam Định\",\n        \"code\": \"tinh_nam_dinh\"\n    },\n    {\n        \"name\": \"Tỉnh Ninh Bình\",\n        \"code\": \"tinh_ninh_binh\"\n    },\n    {\n        \"name\": \"Tỉnh Thanh Hóa\",\n        \"code\": \"tinh_thanh_hoa\"\n    },\n    {\n        \"name\": \"Tỉnh Nghệ An\",\n        \"code\": \"tinh_nghe_an\"\n    },\n    {\n        \"name\": \"Tỉnh Hà Tĩnh\",\n        \"code\": \"tinh_ha_tinh\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Bình\",\n        \"code\": \"tinh_quang_binh\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Trị\",\n        \"code\": \"tinh_quang_tri\"\n    },\n    {\n        \"name\": \"Tỉnh Thừa Thiên Huế\",\n        \"code\": \"tinh_thua_thien_hue\"\n    },\n    {\n        \"name\": \"Thành phố Đà Nẵng\",\n        \"code\": \"thanh_pho_da_nang\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Nam\",\n        \"code\": \"tinh_quang_nam\"\n    },\n    {\n        \"name\": \"Tỉnh Quảng Ngãi\",\n        \"code\": \"tinh_quang_ngai\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Định\",\n        \"code\": \"tinh_binh_dinh\"\n    },\n    {\n        \"name\": \"Tỉnh Phú Yên\",\n        \"code\": \"tinh_phu_yen\"\n    },\n    {\n        \"name\": \"Tỉnh Khánh Hòa\",\n        \"code\": \"tinh_khanh_hoa\"\n    },\n    {\n        \"name\": \"Tỉnh Ninh Thuận\",\n        \"code\": \"tinh_ninh_thuan\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Thuận\",\n        \"code\": \"tinh_binh_thuan\"\n    },\n    {\n        \"name\": \"Tỉnh Kon Tum\",\n        \"code\": \"tinh_kon_tum\"\n    },\n    {\n        \"name\": \"Tỉnh Gia Lai\",\n        \"code\": \"tinh_gia_lai\"\n    },\n    {\n        \"name\": \"Tỉnh Đắk Lắk\",\n        \"code\": \"tinh_dak_lak\"\n    },\n    {\n        \"name\": \"Tỉnh Đắk Nông\",\n        \"code\": \"tinh_dak_nong\"\n    },\n    {\n        \"name\": \"Tỉnh Lâm Đồng\",\n        \"code\": \"tinh_lam_dong\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Phước\",\n        \"code\": \"tinh_binh_phuoc\"\n    },\n    {\n        \"name\": \"Tỉnh Tây Ninh\",\n        \"code\": \"tinh_tay_ninh\"\n    },\n    {\n        \"name\": \"Tỉnh Bình Dương\",\n        \"code\": \"tinh_binh_duong\"\n    },\n    {\n        \"name\": \"Tỉnh Đồng Nai\",\n        \"code\": \"tinh_dong_nai\"\n    },\n    {\n        \"name\": \"Tỉnh Bà Rịa - Vũng Tàu\",\n        \"code\": \"tinh_ba_ria_vung_tau\"\n    },\n    {\n        \"name\": \"Thành phố Hồ Chí Minh\",\n        \"code\": \"thanh_pho_ho_chi_minh\"\n    },\n    {\n        \"name\": \"Tỉnh Long An\",\n        \"code\": \"tinh_long_an\"\n    },\n    {\n        \"name\": \"Tỉnh Tiền Giang\",\n        \"code\": \"tinh_tien_giang\"\n    },\n    {\n        \"name\": \"Tỉnh Bến Tre\",\n        \"code\": \"tinh_ben_tre\"\n    },\n    {\n        \"name\": \"Tỉnh Trà Vinh\",\n        \"code\": \"tinh_tra_vinh\"\n    },\n    {\n        \"name\": \"Tỉnh Vĩnh Long\",\n        \"code\": \"tinh_vinh_long\"\n    },\n    {\n        \"name\": \"Tỉnh Đồng Tháp\",\n        \"code\": \"tinh_dong_thap\"\n    },\n    {\n        \"name\": \"Tỉnh An Giang\",\n        \"code\": \"tinh_an_giang\"\n    },\n    {\n        \"name\": \"Tỉnh Kiên Giang\",\n        \"code\": \"tinh_kien_giang\"\n    },\n    {\n        \"name\": \"Thành phố Cần Thơ\",\n        \"code\": \"thanh_pho_can_tho\"\n    },\n    {\n        \"name\": \"Tỉnh Hậu Giang\",\n        \"code\": \"tinh_hau_giang\"\n    },\n    {\n        \"name\": \"Tỉnh Sóc Trăng\",\n        \"code\": \"tinh_soc_trang\"\n    },\n    {\n        \"name\": \"Tỉnh Bạc Liêu\",\n        \"code\": \"tinh_bac_lieu\"\n    },\n    {\n        \"name\": \"Tỉnh Cà Mau\",\n        \"code\": \"tinh_ca_mau\"\n    }\n]",
+  "topRow": 11,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "rexb90olgh",
+  "widgetName": "locationSelect"
+}

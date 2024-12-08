@@ -29,7 +29,7 @@
         },
         {
           "key": "filters[eop][documentId][$eq]",
-          "value": "kn4nhug7gd8k89go6ms0n6vo"
+          "value": "{{appsmith.URL.queryParams.documentId}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -44,6 +44,9 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "executeOnLoad": true,

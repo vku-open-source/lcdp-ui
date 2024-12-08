@@ -5,9 +5,9 @@
   "bottomRow": 18,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "DD/MM/YYYY",
+  "dateFormat": "YYYY-MM-DD",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2024-12-05T10:52:01.011+07:00",
+  "defaultDate": "2024-12-06T10:52:01.011+07:00",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -52,5 +52,5 @@
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "cqh5gdopz5",
-  "widgetName": "dateFromCopy"
+  "widgetName": "dateTo"
 }

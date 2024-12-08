@@ -1,53 +1,50 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 91,
+  "bottomRow": 55,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{get_eop.data.data.content}}",
+  "defaultText": "This is the initial <b>content</b> of the editor",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "start",
-  "inputType": "markdown",
+  "inputType": "html",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isToolbarHidden": true,
   "isVisible": true,
-  "key": "tzb5s6py5t",
+  "key": "aovyctthha",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 26,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "parentColumnSpace": 9.77734375,
-  "parentId": "i0d1hne6fw",
+  "parentColumnSpace": 12.3291015625,
+  "parentId": "dqcodtcsua",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
-  "topRow": 6,
+  "rightColumn": 63,
+  "topRow": 23,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
-  "widgetId": "z3kx8urb5n",
-  "widgetName": "editor"
+  "widgetId": "3uyobdxeyy",
+  "widgetName": "otherInfo"
 }

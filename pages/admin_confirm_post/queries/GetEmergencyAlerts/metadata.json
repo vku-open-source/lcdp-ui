@@ -1,6 +1,6 @@
 {
   "gitSyncId": "674b5eaa29bd2146155b36c6_ca098ef1-82a1-4a41-9cfd-66c30ba62258",
-  "id": "admin_confirm_post_post_alert_data",
+  "id": "admin_confirm_post_GetEmergencyAlerts",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -27,7 +27,16 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "filters[type][$eq]",
+          "value": "emergency_alert"
+        },
+        {
+          "key": "filters[isAprroved][$eq]",
+          "value": "false"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -39,7 +48,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "post_alert_data",
+    "name": "GetEmergencyAlerts",
     "pageId": "admin_confirm_post",
     "userSetOnLoad": false
   }

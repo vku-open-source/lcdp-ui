@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -16,7 +16,7 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -30,8 +30,8 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 4,
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 12.580078125,
   "parentId": "i0d1hne6fw",
@@ -40,7 +40,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 36,
   "shouldTruncate": false,
-  "text": "Emergency Operation Plan\n",
+  "text": "Bảng kế hoạch khẩn cấp",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

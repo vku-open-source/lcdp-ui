@@ -1,4 +1,4 @@
 {
     "floodData": {{this.params.floodData}},
-    "resourceData": "[{'name': 'Kelly Green', 'location': [-68.4668555, -53.398861], 'availability': '11:00'}, {'name': 'Emily Olson', 'location': [-87.3860315, 46.136249], 'availability': '19:00'}, {'name': 'Brent Rice', 'location': [41.515206, 4.943168], 'availability': '4:00'}, {'name': 'Jonathan Wilson', 'location': [81.717154, 1.467379], 'availability': '15:00'}, {'name': 'Jeffrey Rhodes', 'location': [-62.367393, 168.148539], 'availability': '22:00'}, {'name': 'Mr. John Gutierrez', 'location': [-1.270428, -111.090544], 'availability': '14:00'}, {'name': 'Joanna Maynard', 'location': [-81.421979, 43.44739], 'availability': '2:00'}, {'name': 'Tyler Bennett', 'location': [-83.809344, 62.386989], 'availability': '17:00'}, {'name': 'Heather Robertson', 'location': [88.250129, 66.75749], 'availability': '14:00'}, {'name': 'Marco Preston', 'location': [-77.700933, 148.675827], 'availability': '9:00'}]"
+    "resourceData": {{this.params.resourceData}}
 }

@@ -1,21 +1,29 @@
 export default {
 	async getEOPContent() {
 		const documentId = appsmith.URL.queryParams.documentId
+		console.log(documentId)
 		if(!documentId) {
 			return ""
 		}
 		const res = await get_eop.run({
-			documentId: "kn4nhug7gd8k89go6ms0n6vo"
+			documentId
 		}) 
+		console.log(res, documentId)
 		return res.data.content
 	},
 	
 		
 	async confirmEOP() {
 		const documentId = appsmith.URL.queryParams.documentId
-		if(!documentId) return;
+		if(!documentId) {
+			showAlert("No documentId", 'warning')
+			return;
+		}
 		
 		const res = await confirm_eop.run()	
-		
+		console.log(res)
+		navigateTo('confirmed-eop', {
+			documentId
+		})
 	}
 }

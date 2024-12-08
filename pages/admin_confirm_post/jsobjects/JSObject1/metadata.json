@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_ee463854-194e-4a0b-abda-30eb60897ac8",
+  "id": "admin_confirm_post_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "admin_confirm_post",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

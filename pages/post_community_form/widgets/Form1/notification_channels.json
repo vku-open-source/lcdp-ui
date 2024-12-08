@@ -3,7 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 94,
-  "defaultSelectedValues": "{\nvalue:notification_channels.options[0].value\n}}",
+  "defaultSelectedValues": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -42,12 +42,12 @@
   "onSelectionChange": "{{}}",
   "options": [
     {
-      "label": "sms",
-      "value": "sms"
+      "label": "Email",
+      "value": "email"
     },
     {
-      "label": "email",
-      "value": "email"
+      "label": "SMS",
+      "value": "sms"
     }
   ],
   "originalBottomRow": 94,

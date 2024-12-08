@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eops/kn4nhug7gd8k89go6ms0n6vo",
+      "path": "/eops/{{appsmith.URL.queryParams.documentId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -32,7 +32,11 @@
       "name": "strapi",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "executeOnLoad": true,
     "name": "get_eop",
     "pageId": "confirmed-eop",

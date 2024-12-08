@@ -56,6 +56,10 @@
     {
       "id": "admin_confirm_post",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

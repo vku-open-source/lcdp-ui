@@ -1,6 +1,6 @@
 {
   "gitSyncId": "674b5eaa29bd2146155b36c6_fc7ef70d-7314-4250-b7a1-46ee2826a895",
-  "id": "admin_confirm_post_approve_community",
+  "id": "admin_confirm_post_ApproveEmergencyAlert",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -15,13 +15,13 @@
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       },
       "headers": [],
       "httpMethod": "PUT",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/communities/fmsdtf9k6ovkj2taue15y314",
+      "path": "/communities/{{Table1.selectedRow.documentId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -37,9 +37,13 @@
       "name": "strapi",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "approve_community",
+    "name": "ApproveEmergencyAlert",
     "pageId": "admin_confirm_post",
     "userSetOnLoad": false
   }
