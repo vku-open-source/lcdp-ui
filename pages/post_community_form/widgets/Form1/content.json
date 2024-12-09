@@ -26,7 +26,7 @@
   "labelPosition": "Top",
   "labelText": "Nội dung",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,

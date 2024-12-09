@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 94,
+  "bottomRow": 96,
   "defaultSelectedValues": "",
   "dynamicBindingPathList": [
     {
@@ -31,7 +31,7 @@
   "labelText": "Notification channels",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 52,
@@ -57,7 +57,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 17,
-  "topRow": 87,
+  "topRow": 89,
   "type": "CHECKBOX_GROUP_WIDGET",
   "version": 2,
   "widgetId": "2fnjybet7t",
