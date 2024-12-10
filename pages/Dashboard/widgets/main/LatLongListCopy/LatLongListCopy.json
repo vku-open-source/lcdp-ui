@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 78,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 73,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 360,
+      "bottomRow": 320,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -76,9 +76,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     },
     {
@@ -111,9 +108,9 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 78,
-  "originalTopRow": 42,
-  "pageSize": 5,
+  "originalBottomRow": 73,
+  "originalTopRow": 41,
+  "pageSize": 4,
   "parentColumnSpace": 16.6875,
   "parentId": "gqbtvjfmtg",
   "parentRowSpace": 10,
@@ -124,7 +121,7 @@
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 42,
+  "topRow": 41,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "tk61y1xwfh",

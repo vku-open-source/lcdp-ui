@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 31,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 250,
+      "bottomRow": 240,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -46,7 +46,7 @@
       "noPad": true,
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "eo97pkkemw",
+      "parentId": "k6eo0t8atr",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -54,7 +54,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "d4xcrkehnu",
+      "widgetId": "57zu53bjh9",
       "widgetName": "Canvas1Copy"
     }
   ],
@@ -74,9 +74,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "listData"
@@ -101,10 +98,10 @@
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "blbw6cq8fu",
-  "leftColumn": 40,
+  "leftColumn": 0,
   "listData": "{{VNDMSWarning.getVNDMSWarningList.data}}",
-  "mainCanvasId": "d4xcrkehnu",
-  "mainContainerId": "47tc1c6cwj",
+  "mainCanvasId": "57zu53bjh9",
+  "mainContainerId": "2cdcxgzjxz",
   "minWidth": 450,
   "mobileBottomRow": 47,
   "mobileLeftColumn": 39,
@@ -114,8 +111,8 @@
   "originalBottomRow": 31,
   "originalTopRow": 6,
   "pageSize": 3,
-  "parentColumnSpace": 16.6875,
-  "parentId": "gqbtvjfmtg",
+  "parentColumnSpace": 1.6875,
+  "parentId": "dxg6oj1up8",
   "parentRowSpace": 10,
   "primaryKeys": "{{LatLongList.listData.map((currentItem, currentIndex) =>currentIndex)}}",
   "renderMode": "CANVAS",
@@ -127,6 +124,6 @@
   "topRow": 6,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "eo97pkkemw",
+  "widgetId": "k6eo0t8atr",
   "widgetName": "LatLongList"
 }

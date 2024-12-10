@@ -1,8 +1,12 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
+  "boxShadow": "none",
   "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
     {
       "key": "truncateButtonColor"
     },
@@ -11,42 +15,42 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "te8mi5abmf",
-  "leftColumn": 40,
+  "key": "c68apmh0q6",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 40,
-  "mobileRightColumn": 56,
-  "mobileTopRow": 2,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
-  "overflow": "NONE",
-  "parentColumnSpace": 19.8125,
-  "parentId": "gqbtvjfmtg",
-  "parentRowSpace": 10,
+  "overflow": "SCROLL",
+  "parentId": "rx6t7knxsi",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 42,
   "shouldTruncate": false,
-  "text": "Các khu vực đang có nguy cơ thiên tai",
+  "text": "{{currentItem.label}}",
   "textAlign": "LEFT",
-  "textColor": "#4facfe",
+  "textColor": "#231F20",
+  "textStyle": "HEADING",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "hk45hgcm0t",
-  "widgetName": "Text4Copy"
+  "widgetId": "tyg4l5pbhv",
+  "widgetName": "Label"
 }
