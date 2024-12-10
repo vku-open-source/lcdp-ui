@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_9c512a0f-dd20-4049-b516-e785e03315a8",
+  "id": "Dashboard_CommunityObject",
+  "unpublishedCollection": {
+    "name": "CommunityObject",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "Date7",
+        "value": "new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)"
+      }
+    ]
+  }
+}

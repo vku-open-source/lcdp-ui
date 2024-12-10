@@ -58,7 +58,11 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "chat-group",
+      "isDefault": false
+    },
+    {
+      "id": "list-eops",
       "isDefault": false
     }
   ],

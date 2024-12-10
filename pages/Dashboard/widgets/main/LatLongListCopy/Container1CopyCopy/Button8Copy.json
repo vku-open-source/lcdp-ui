@@ -1,19 +1,21 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "buttonColor"
     }
   ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -23,30 +25,28 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "4xo45c7qor",
-  "leftColumn": 44,
+  "key": "h9577od1h1",
+  "leftColumn": 46,
   "minWidth": 120,
-  "mobileBottomRow": 50,
-  "mobileLeftColumn": 45,
-  "mobileRightColumn": 61,
-  "mobileTopRow": 46,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Chat.name);}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 41,
-  "parentColumnSpace": 19.9375,
-  "parentId": "gqbtvjfmtg",
+  "onClick": "{{showModal(RescueInfoModal.name);\nstoreValue('Community', currentItem);}}",
+  "parentColumnSpace": 7.0390625,
+  "parentId": "d8gjl10qqk",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
-  "text": "Hỏi đáp tình hình với AI",
-  "topRow": 40,
+  "rightColumn": 64,
+  "text": "Chi tiết",
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v34gl42lb7",
-  "widgetName": "Button7"
+  "widgetId": "1saoad3l2i",
+  "widgetName": "Button8Copy"
 }

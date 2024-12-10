@@ -1,11 +1,12 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_9b45f206-d1b3-4172-bd3b-3e72f5234d5c",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_9fecd70a-b1e1-4d67-bbdb-143dca925230",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1370,
+          "bottomRow": 680,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -25,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "list-eops",
+    "slug": "list-eops"
   }
 }
