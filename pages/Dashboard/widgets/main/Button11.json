@@ -36,7 +36,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 76,
   "needsErrorInfo": false,
-  "onClick": "{{showAlert(JSON.stringify(appsmith.store))}}",
+  "onClick": "{{showAlert(JSON.stringify(appsmith.store.role))}}",
   "parentColumnSpace": 13.171875,
   "parentId": "gqbtvjfmtg",
   "parentRowSpace": 10,
