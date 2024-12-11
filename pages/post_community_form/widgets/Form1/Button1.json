@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 84,
+  "boxShadow": "none",
+  "buttonColor": "#b91c1c",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "q1fjm07eqo",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 76,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 72,
+  "needsErrorInfo": false,
+  "onClick": "{{appsmith.geolocation.watchPosition();}}",
+  "originalBottomRow": 84,
+  "originalTopRow": 80,
+  "parentColumnSpace": 11.06494140625,
+  "parentId": "mjwf95d7q7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Lấy địa điểm hiện tại",
+  "topRow": 80,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6i5mhwbggt",
+  "widgetName": "Button1"
+}

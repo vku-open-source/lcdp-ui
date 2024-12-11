@@ -1,0 +1,4 @@
+{
+    "channel": "GENERAL",
+    "text": {{this.params.content}}
+}

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "674b5eaa29bd2146155b36c6_db7efd97-b0dd-4474-a0bd-4cdc11cbabcd",
+  "id": "list-eops_Report",
+  "unpublishedCollection": {
+    "name": "Report",
+    "pageId": "list-eops",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "EOPID",
+        "value": "1"
+      }
+    ]
+  }
+}

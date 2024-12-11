@@ -1,7 +1,6 @@
 export default  {
 	async generateEOP() {
 		// 1. get flood data by date from/to and location -> using api
-		console.log(dateFrom.formattedDate.split('T')[0], dateTo.formattedDate.split('T')[0])
 	 	const res = await get_nchmf_warnings.run({
 			dateFrom: dateFrom.formattedDate,
 			dateTo: dateTo.formattedDate
@@ -14,6 +13,8 @@ export default  {
 				warning_level: e.warning_level
 			}))
 		).flat()
+		
+		const sosAlertData = await 
 		
 		const generateEOPRes = await generate_eop.run({
 			floodData: `

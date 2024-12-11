@@ -46,13 +46,14 @@
     "publishedAt",
     "isAprroved"
   ],
-  "columnUpdatedAt": 1733637190438,
+  "columnUpdatedAt": 1733857228553,
   "columnWidthMap": {
     "content": 324,
     "createdAt": 187,
+    "customColumn1": 80,
     "id": 76,
     "isAprroved": 198,
-    "location": 207,
+    "location": 115.00000000000001,
     "priority": 115,
     "title": 223
   },
@@ -121,16 +122,31 @@
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.location.buttonColor"
+    },
+    {
+      "key": "primaryColumns.location.borderRadius"
+    },
+    {
+      "key": "primaryColumns.location.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.location.onClick"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.location.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -153,8 +169,8 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "originalBottomRow": 57,
-  "originalTopRow": 9,
+  "originalBottomRow": 56,
+  "originalTopRow": 8,
   "parentColumnSpace": 19.057861328125,
   "parentId": "u2mrz51vpj",
   "parentRowSpace": 10,
@@ -180,7 +196,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "content",
+      "label": "Nội dung",
       "notation": "standard",
       "originalId": "content",
       "sticky": "",
@@ -210,7 +226,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "createdAt",
       "notation": "standard",
       "originalId": "createdAt",
@@ -222,13 +238,13 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "Action",
+      "alias": "",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
       "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "Approve",
+      "buttonLabel": "Phát",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
       "computedValue": "",
@@ -248,7 +264,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Action",
+      "label": "",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{ApproveEmergencyAlert.run().then(() => {\n  showAlert('approve success', 'success');\n});}}",
@@ -357,9 +373,14 @@
       "alias": "location",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
+      "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Địa điểm",
+      "columnType": "button",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"location\"]))}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -374,8 +395,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "location",
+      "label": "",
       "notation": "standard",
+      "onClick": "{{\nscript.handleClickShowMap(currentRow.location)\n}}",
       "originalId": "location",
       "sticky": "",
       "textSize": "0.875rem",
@@ -436,7 +458,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "priority",
+      "label": "Độ ưu tiên",
       "notation": "standard",
       "originalId": "priority",
       "sticky": "",
@@ -498,7 +520,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "title",
+      "label": "Thông báo",
       "notation": "standard",
       "originalId": "title",
       "sticky": "",
@@ -577,7 +599,7 @@
   "searchKey": "",
   "tableData": "{{GetEmergencyAlerts.data.data}}",
   "textSize": "0.875rem",
-  "topRow": 9,
+  "topRow": 8,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 70,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "7gy1716vaz",
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 23.390625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 51,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React, { useState } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card, Input, Form, message } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nfunction AdminAddUserForm() {\n  const [form] = Form.useForm();\n  const onFinish = async values => {\n    const userPayload = {\n      username: values.email.split('@')[0],\n      fullname: values.fullname,\n      age: values.age,\n      email: values.email,\n      password: 'volunteer@123',\n      phone: values.phone,\n      allowNotification: {\n        email: true,\n        sms: true\n      },\n      role: 4\n    };\n    try {\n      const response = await fetch('http://34.67.28.143:1337/api/users', {\n        method: 'POST',\n        headers: {\n          'Content-Type': 'application/json'\n        },\n        body: JSON.stringify(userPayload)\n      });\n      if (response.ok) {\n        message.success('User added successfully!');\n        form.resetFields();\n      } else {\n        const errorData = await response.json();\n        message.error(`Error: ${errorData.message || 'Failed to add user.'}`);\n      }\n    } catch (error) {\n      message.error('An error occurred while adding the user.');\n    }\n  };\n  return /*#__PURE__*/React.createElement(Card, {\n    className: \"app\"\n  }, /*#__PURE__*/React.createElement(\"h2\", {\n    style: {\n      textAlign: 'center',\n      marginBottom: '20px'\n    }\n  }, \"Add New Volunteer\"), /*#__PURE__*/React.createElement(Form, {\n    form: form,\n    layout: \"vertical\",\n    onFinish: onFinish,\n    initialValues: {\n      age: '',\n      email: '',\n      fullname: '',\n      phone: ''\n    }\n  }, /*#__PURE__*/React.createElement(Form.Item, {\n    name: \"email\",\n    label: \"Email\",\n    rules: [{\n      required: true,\n      message: 'Please enter the email!'\n    }]\n  }, /*#__PURE__*/React.createElement(Input, {\n    placeholder: \"Enter email\"\n  })), /*#__PURE__*/React.createElement(Form.Item, {\n    name: \"fullname\",\n    label: \"Full Name\",\n    rules: [{\n      required: true,\n      message: 'Please enter the full name!'\n    }]\n  }, /*#__PURE__*/React.createElement(Input, {\n    placeholder: \"Enter full name\"\n  })), /*#__PURE__*/React.createElement(Form.Item, {\n    name: \"age\",\n    label: \"Age\",\n    rules: [{\n      required: true,\n      message: 'Please enter the age!'\n    }]\n  }, /*#__PURE__*/React.createElement(Input, {\n    placeholder: \"Enter age\"\n  })), /*#__PURE__*/React.createElement(Form.Item, {\n    name: \"phone\",\n    label: \"Phone\",\n    rules: [{\n      required: true,\n      message: 'Please enter the phone number!'\n    }]\n  }, /*#__PURE__*/React.createElement(Input, {\n    placeholder: \"Enter phone number\"\n  })), /*#__PURE__*/React.createElement(Form.Item, null, /*#__PURE__*/React.createElement(Button, {\n    type: \"primary\",\n    htmlType: \"submit\"\n  }, \"Submit\"))));\n}\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(AdminAddUserForm, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 14,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React, { useState } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card, Input, Form, message } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\n\nfunction AdminAddUserForm() {\n  const [form] = Form.useForm();\n\n  const onFinish = async (values) => {\n    const userPayload = {\n      username: values.email.split('@')[0],\n      fullname: values.fullname,\n      age: values.age,\n      email: values.email,\n      password: 'volunteer@123',\n      phone: values.phone,\n      allowNotification: {\n        email: true,\n        sms: true\n      },\n      role: 4\n    };\n\n    try {\n      const response = await fetch('http://34.67.28.143:1337/api/users', {\n        method: 'POST',\n        headers: {\n          'Content-Type': 'application/json',\n        },\n        body: JSON.stringify(userPayload),\n      });\n\n      if (response.ok) {\n        message.success('User added successfully!');\n        form.resetFields();\n      } else {\n        const errorData = await response.json();\n        message.error(`Error: ${errorData.message || 'Failed to add user.'}`);\n      }\n    } catch (error) {\n      message.error('An error occurred while adding the user.');\n    }\n  };\n\n  return (\n    <Card className=\"app\">\n      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Add New Volunteer</h2>\n      <Form\n        form={form}\n        layout=\"vertical\"\n        onFinish={onFinish}\n        initialValues={{ age: '', email: '', fullname: '', phone: '' }}\n      >\n        <Form.Item\n          name=\"email\"\n          label=\"Email\"\n          rules={[{ required: true, message: 'Please enter the email!' }]}\n        >\n          <Input placeholder=\"Enter email\" />\n        </Form.Item>\n\n        <Form.Item\n          name=\"fullname\"\n          label=\"Full Name\"\n          rules={[{ required: true, message: 'Please enter the full name!' }]}\n        >\n          <Input placeholder=\"Enter full name\" />\n        </Form.Item>\n\n        <Form.Item\n          name=\"age\"\n          label=\"Age\"\n          rules={[{ required: true, message: 'Please enter the age!' }]}\n        >\n          <Input placeholder=\"Enter age\" />\n        </Form.Item>\n\n        <Form.Item\n          name=\"phone\"\n          label=\"Phone\"\n          rules={[{ required: true, message: 'Please enter the phone number!' }]}\n        >\n          <Input placeholder=\"Enter phone number\" />\n        </Form.Item>\n\n        <Form.Item>\n          <Button type=\"primary\" htmlType=\"submit\">\n            Submit\n          </Button>\n        </Form.Item>\n      </Form>\n    </Card>\n  );\n}\n\nappsmith.onReady(() => {\n  reactDom.render(<AdminAddUserForm />, document.getElementById('root'));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "lumqdga6ln",
+  "widgetName": "add_volunteer"
+}

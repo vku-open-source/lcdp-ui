@@ -20,8 +20,12 @@ export default {
 			return;
 		}
 		
-		const res = await confirm_eop.run()	
-		console.log(res)
+		const res = await confirm_eop.run()
+		
+		await sendMessageToRocket.run({
+			content: res.content
+		})
+		
 		navigateTo('confirmed-eop', {
 			documentId
 		})

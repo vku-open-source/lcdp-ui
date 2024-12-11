@@ -9,4 +9,14 @@ export default {
 		return res.data.content
 	},
 	
+	async doneTask(task) {
+		const taskDocumentId = task.documentId;
+		if(!taskDocumentId) return;
+		const res = await makeEopTaskDone.run({
+			taskDocumentId
+		})
+		
+		get_eop_tasks.run()
+	}
+	
 }

@@ -8,10 +8,10 @@
       "colorStyle": "light",
       "logoAssetId": "",
       "logoConfiguration": "logoOnly",
-      "navStyle": "stacked",
-      "orientation": "top",
+      "navStyle": "sidebar",
+      "orientation": "side",
       "position": "static",
-      "showNavbar": false,
+      "showNavbar": true,
       "showSignIn": true
     },
     "themeSetting": {
@@ -64,6 +64,14 @@
     {
       "id": "list-eops",
       "isDefault": false
+    },
+    {
+      "id": "admin_add_goods",
+      "isDefault": false
+    },
+    {
+      "id": "admin_add_volunteer",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
@@ -74,10 +82,10 @@
       "colorStyle": "light",
       "logoAssetId": "",
       "logoConfiguration": "logoOnly",
-      "navStyle": "stacked",
-      "orientation": "top",
+      "navStyle": "sidebar",
+      "orientation": "side",
       "position": "static",
-      "showNavbar": false,
+      "showNavbar": true,
       "showSignIn": true
     },
     "themeSetting": {

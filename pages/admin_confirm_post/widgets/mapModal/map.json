@@ -1,0 +1,70 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 52,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{{\n\t\"lat\": appsmith.store?.lat || 0,\n\t\"lng\": appsmith.store?.lng || 0,\n\t\"locationName\": appsmith.store?.locationName || \"\"\n}}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "f7audvg0u5",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 136,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 106,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 80,
+  "originalTopRow": 36,
+  "parentColumnSpace": 23.390625,
+  "parentId": "7wrvg88lco",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "srcDoc": {
+    "css": "@charset \"UTF-8\";\n#map {\n  height: 100vh;\n}\n\n.info-panel {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px; /* Khoảng cách giữa các phần tử */\n  padding: 10px;\n}\n\n.info-panel .input-group {\n  display: flex;\n  align-items: center;\n  gap: 5px; /* Khoảng cách giữa input và button */\n}\n\n.info-panel input {\n  width: 150px;\n  padding: 5px;\n  border: none; /* Loại bỏ border */\n  border-radius: 4px;\n}\n\n.info-panel button {\n  padding: 5px 8px;\n  border: 2px solid #007bff; /* Viền màu xanh dương */\n  background-color: white; /* Nền màu trắng */\n  color: #007bff; /* Màu chữ xanh dương */\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n.info-panel button:hover {\n  background-color: #007bff; /* Nền đổi thành xanh dương khi hover */\n  color: white; /* Chữ đổi thành trắng khi hover */\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n     integrity=\"sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=\"\n     crossorigin=\"\"/>\n<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"\n     integrity=\"sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=\"\n     crossorigin=\"\"></script>\n<script src=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js\"></script>\n\n\n<div id=\"map\"></div>\n\n<script >\n\t\nfunction copyToClipboard(inputId) {\n  var input = document.getElementById(inputId);\n  if (input) {\n    input.select();\n    document.execCommand('copy');\n  } else {\n    console.error('Input element not found');\n  }\n}\n</script>",
+    "js": "appsmith.onReady(() => {\n  // Khởi tạo bản đồ với tọa độ Đà Nẵng\n  const lat = appsmith.model.lat;\n  const lng = appsmith.model.lng;\n  const locationName = appsmith.model.locationName;\n  // alert(`${lat}, ${lng}`)\n  var map = L.map('map').setView([lat, lng], 19);\n\n  // Thêm tile layer từ OpenStreetMap\n  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {\n    maxZoom: 19,\n    attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'\n  }).addTo(map);\n\n  // Khởi tạo geocoder từ thư viện Leaflet\n  var geocoder = L.Control.Geocoder.nominatim();\n  L.Control.geocoder({\n    geocoder: geocoder,\n    collapsed: false\n  }).addTo(map);\n\n  // Đảm bảo `appsmith.store` được khởi tạo\n  if (!appsmith.store) {\n    appsmith.store = {}; // Khởi tạo store nếu chưa tồn tại\n  }\n  let locationMarker = L.marker([lat, lng]).addTo(map).bindPopup(locationName).openPopup();\n\n  // Sự kiện click trên bản đồ\n  map.on('click', e => {});\n  // \n  // appsmith.onModelChange(v => {\n  // // alert(JSON.stringify(appsmith.model))\n  // const lat = v.lat;\n  // const lng = v.lng;\n  // console.log(lat, lng)\n  // map.setView([v.lat, v.lng])\n  // })\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 8,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "#map {\n\theight: 100vh;\n}\n\n.info-panel {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px; /* Khoảng cách giữa các phần tử */\n  padding: 10px;\n}\n\n.info-panel .input-group {\n  display: flex;\n  align-items: center;\n  gap: 5px; /* Khoảng cách giữa input và button */\n}\n\n.info-panel input {\n  width: 150px;\n  padding: 5px;\n  border: none; /* Loại bỏ border */\n  border-radius: 4px;\n}\n\n.info-panel button {\n  padding: 5px 8px;\n  border: 2px solid #007bff; /* Viền màu xanh dương */\n  background-color: white; /* Nền màu trắng */\n  color: #007bff; /* Màu chữ xanh dương */\n  border-radius: 4px;\n  cursor: pointer;\n}\n\n.info-panel button:hover {\n  background-color: #007bff; /* Nền đổi thành xanh dương khi hover */\n  color: white; /* Chữ đổi thành trắng khi hover */\n}\n",
+    "html": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n     integrity=\"sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=\"\n     crossorigin=\"\"/>\n<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"\n     integrity=\"sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=\"\n     crossorigin=\"\"></script>\n<script src=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js\"></script>\n\n\n<div id=\"map\"></div>\n\n<script >\n\t\nfunction copyToClipboard(inputId) {\n  var input = document.getElementById(inputId);\n  if (input) {\n    input.select();\n    document.execCommand('copy');\n  } else {\n    console.error('Input element not found');\n  }\n}\n</script>",
+    "js": "appsmith.onReady(() => {\n  // Khởi tạo bản đồ với tọa độ Đà Nẵng\n\tconst lat = appsmith.model.lat;\n\tconst lng = appsmith.model.lng;\n\tconst locationName = appsmith.model.locationName;\n\t// alert(`${lat}, ${lng}`)\n  var map = L.map('map').setView([lat, lng], 19);\n\n  // Thêm tile layer từ OpenStreetMap\n  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {\n    maxZoom: 19,\n    attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'\n  }).addTo(map);\n\n  // Khởi tạo geocoder từ thư viện Leaflet\n  var geocoder = L.Control.Geocoder.nominatim();\n  L.Control.geocoder({\n    geocoder: geocoder,\n    collapsed: false,\n  }).addTo(map);\n\n  // Đảm bảo `appsmith.store` được khởi tạo\n  if (!appsmith.store) {\n    appsmith.store = {}; // Khởi tạo store nếu chưa tồn tại\n  }\n\t\n\tlet locationMarker = L.marker([lat, lng])\n\t\t.addTo(map)\n\t\t.bindPopup(locationName)\n\t\t.openPopup()\n\t\n\n\n\t\n\n  // Sự kiện click trên bản đồ\n  map.on('click', (e) => {\n    \n  });\n\t// \n\t// appsmith.onModelChange(v => {\n\t\t// // alert(JSON.stringify(appsmith.model))\n\t\t// const lat = v.lat;\n\t\t// const lng = v.lng;\n\t\t// console.log(lat, lng)\n\t\t// map.setView([v.lat, v.lng])\n\t// })\n});\n"
+  },
+  "version": 1,
+  "widgetId": "l28jo17mjg",
+  "widgetName": "map"
+}

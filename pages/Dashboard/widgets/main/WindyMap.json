@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 79,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ],\n\t\"BASE_URL\":\"{{Constants.BACKEND_BASE_URL}}\"\n}",
   "dynamicBindingPathList": [
@@ -35,7 +35,7 @@
   "isSearchWildcard": true,
   "isVisible": true,
   "key": "r79t3lz0zh",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 42,
@@ -48,7 +48,7 @@
   "parentId": "gqbtvjfmtg",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 39,
+  "rightColumn": 40,
   "srcDoc": {
     "css": "@charset \"UTF-8\";\n@import url(\"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");\n* {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif;\n  border: None;\n  text-decoration: None;\n}\n\n.agri-chart-img {\n  width: 100%; /* Để hình ảnh co giãn đầy đủ chiều rộng của container */\n  max-width: 500px; /* Đảm bảo không vượt quá chiều rộng của wrapper */\n  object-fit: cover; /* Để hình ảnh không bị méo khi co giãn */\n}\n\n.leaflet-popup-content-wrapper {\n  min-width: 400px;\n  padding: 0;\n}\n\n.station-popup-info {\n  width: 100%;\n}\n\n.station-popup-info * {\n  width: 100%;\n}",
     "html": "<html>\n    <head>\n        <meta\n            name=\"viewport\"\n            content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"\n        />\n\t\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js\"></script>\n        <script src=\"https://unpkg.com/leaflet@1.4.0/dist/leaflet.js\"></script>\n\t\t\t<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n        <script src=\"https://api.windy.com/assets/map-forecast/libBoot.js\"></script>\n\t\t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js\" integrity=\"sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>\n        <style>\n            #windy {\n                width: 100%;\n                height: 100vh;\n            }\n        </style>\n    </head>\n    <body>\n\t\t\t\n        <script src=\"script.js\"></script>\n        <div id=\"windy\"></div>\n\t\t\t\t\n    </body>\n</html>",

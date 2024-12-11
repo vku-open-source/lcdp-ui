@@ -3,7 +3,7 @@
   "borderOpacity": 100,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 72,
+  "bottomRow": 79,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "dynamicBindingPathList": [
     {
@@ -37,7 +37,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "source": "http://34.67.28.143:10000/channel/general?layout=embedded&resumeToken=j7-v15CpFNvG3LrES24nS8aC5cZFyT-ctT-GEow2Z6O",
-  "topRow": 4,
+  "topRow": 11,
   "type": "IFRAME_WIDGET",
   "version": 1,
   "widgetId": "abi0y5zuhx",
