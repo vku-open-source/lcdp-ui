@@ -25,8 +25,8 @@ export default {
 			storeValue('token', res.jwt);
 			storeValue('user',res.user);
 			console.log(appsmith.store.user)
-			showAlert("Login successfull");
-			await this.getRole();
+			// showAlert("Login successfull");
+			// await this.getRole();
 			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
 			return res;
 		} catch {
