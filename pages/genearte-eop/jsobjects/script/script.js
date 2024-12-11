@@ -5,6 +5,7 @@ export default  {
 			dateFrom: dateFrom.formattedDate,
 			dateTo: dateTo.formattedDate
 		})
+		
 		const floodData = res.data.map(
 			item => item.data.map(e => ({
 				province: e.label,
@@ -14,16 +15,37 @@ export default  {
 			}))
 		).flat()
 		
-		const sosAlertData = await 
+		const resSosAlert = await getSosAlert.run({
+					dateFrom: dateFrom.formattedDate,
+			dateTo: dateTo.formattedDate	
+		})
 		
+		const sosAlertData = resSosAlert.data.map(
+			item => ({
+				title: item.title,
+				content: item.content,
+				location: item.location
+			})
+		)
+		console.log(111, floodData, sosAlertData)
+		// console.log(222, `
+// ${JSON.stringify(floodData)}
+// 
+// ${JSON.stringify(sosAlertData)}
+// 
+// ${otherInfo.text}
+		// `)
 		const generateEOPRes = await generate_eop.run({
 			floodData: `
 ${JSON.stringify(floodData)}
+
+${JSON.stringify(sosAlertData)}
 
 ${otherInfo.text}
 			`,
 			resourceData: resourceInput.text
 		})
+		
 		console.log(generateEOPRes)
 		
 		navigateTo('confirm-eop', {

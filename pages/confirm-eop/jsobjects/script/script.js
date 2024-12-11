@@ -9,6 +9,13 @@ export default {
 			documentId
 		}) 
 		console.log(res, documentId)
+		
+		// if(!res.data.draft) { 
+			// showAlert("Bảng kế hoạch này đã được xác nhận trước đó!")
+			// navigateTo("list-eops");
+			// return;
+		// }
+		// 
 		return res.data.content
 	},
 	
@@ -22,8 +29,20 @@ export default {
 		
 		const res = await confirm_eop.run()
 		
+		const resEopTasks = await get_eop_tasks.run()
+		const eopTasks = resEopTasks.data
+		
+  const eopTasksStr = eopTasks.map((task) => {
+    return `Nhiệm vụ ID: ${task.id}\nƯu tiên: ${task.priority}\nMô tả: ${task.description}\nVị trí: ${task.location}\nTài nguyên cần thiết: ${task.resources_needed}\n---`;
+  }).join('\n\n');
+
+		// send EOP to rocket.chat
 		await sendMessageToRocket.run({
-			content: res.content
+			content: res.data.content
+		})
+		
+		await sendMessageToRocket.run({
+			content: eopTasksStr
 		})
 		
 		navigateTo('confirmed-eop', {

@@ -1,21 +1,15 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_ae7dd6cc-5c18-4345-ae9d-86dc64d775be",
-  "id": "list-eops_Report.GenerateReport",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_31189c07-150c-4cca-b1cd-dda0675d3cdb",
+  "id": "list-eops_Report.QueryReports",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "id",
-          "value": "{{13}}"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "list-eops_Report",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -29,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "Report.GenerateReport",
-    "name": "GenerateReport",
+    "fullyQualifiedName": "Report.QueryReports",
+    "name": "QueryReports",
     "pageId": "list-eops",
     "userSetOnLoad": false
   }
