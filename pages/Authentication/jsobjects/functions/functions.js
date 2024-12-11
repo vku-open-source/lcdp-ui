@@ -21,11 +21,11 @@ export default {
 	signIn: async () => {
 		try {
 			const res = await login.run();
-			console.log("res:", res);
 			storeValue('token', res.jwt);
 			storeValue('user',res.user);
-			console.log(appsmith.store.user)
+
 			showAlert("Login successfull");
+			
 			await this.getRole();
 			// await this.getRole();
 			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
@@ -56,6 +56,7 @@ export default {
 		const res = await GetUser.run();
 		const result = res[0].role.name;
 		storeValue('role', result);
+		showAlert(JSON.stringify(result))
 		return result;
 	}
 	

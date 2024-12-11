@@ -44,7 +44,7 @@
     "click",
     "submit"
   ],
-  "text": "SIGN IN",
+  "text": "Đăng nhập",
   "tooltip": "",
   "topRow": 40,
   "type": "BUTTON_WIDGET",
