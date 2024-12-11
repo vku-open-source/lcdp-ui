@@ -1,19 +1,12 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_9a664ed7-af1a-46a4-ae8e-d7a5f638dd48",
-  "id": "Authentication_functions.verifyHash",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_024edef9-6871-4399-a8d8-bf6c467ce042",
+  "id": "Authentication_functions.getRole",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "password"
-        },
-        {
-          "name": "hash"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -30,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "functions.verifyHash",
-    "name": "verifyHash",
+    "fullyQualifiedName": "functions.getRole",
+    "name": "getRole",
     "pageId": "Authentication",
     "userSetOnLoad": false
   }

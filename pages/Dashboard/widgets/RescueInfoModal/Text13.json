@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 44,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "originalBottomRow": 44,
-  "originalTopRow": 36,
+  "originalBottomRow": 45,
+  "originalTopRow": 37,
   "overflow": "NONE",
   "parentColumnSpace": 12.96875,
   "parentId": "byexs03m7x",
@@ -46,7 +46,7 @@
   "text": "Địa chỉ: {{appsmith.store.Community.location.address}}\nToạ độ:\n\t- Kinh độ: {{appsmith.store.Community.location.long}}\n\t- Vĩ độ: {{appsmith.store.Community.location.lat}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 37,
+  "topRow": 36,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

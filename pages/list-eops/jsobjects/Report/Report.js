@@ -3,7 +3,7 @@ export default {
 	async GenerateReport (id=13) {
 		this.EOPID = id;
 		const response = await Create_report.run();
-		await get_eops.run();
+		await this.QueryExistReportEOP();
 		return response;
 	},
 	async QueryReport (id=4) {

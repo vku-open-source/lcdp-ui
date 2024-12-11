@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 52,
+  "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -130,6 +130,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.isDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,6 +150,9 @@
     },
     {
       "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -353,7 +359,7 @@
       "id": "customColumn3",
       "index": 10,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role==\"Admin\"))}}",
       "isDerived": true,
       "isDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Report.QueryExistReportEOP.data[currentRow.id] !== undefined))}}",
       "isDiscardVisible": true,

@@ -1,5 +1,5 @@
 {
     "email": {{inp_registerEmail.text}},
     "password": {{inp_registerPassword.text}},
-    "username": "{{inp_firstName.text}} {{inp_lastName.text}}"
+    "username": "{{inp_firstName.text}}" 
 }

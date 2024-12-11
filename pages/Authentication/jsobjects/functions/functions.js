@@ -6,27 +6,32 @@ export default {
 		this.defaultTab = newTab;
 	},
 
-	generatePasswordHash: async () => {
-		return dcodeIO.bcrypt.hashSync(inp_registerPassword.text, 10);
-	},
+	// generatePasswordHash: async () => {
+		// return dcodeIO.bcrypt.hashSync(inp_registerPassword.text, 10);
+	// },
+// 
+	// verifyHash: async (password, hash) => {
+		// return dcodeIO.bcrypt.compareSync(password, hash)
+	// },
 
-	verifyHash: async (password, hash) => {
-		return dcodeIO.bcrypt.compareSync(password, hash)
-	},
-
-	createToken: async (user) => {
-		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
-	},
+	// createToken: async (user) => {
+		// return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
+	// },
 
 	signIn: async () => {
 		try {
 			const res = await login.run();
+			console.log("res:", res);
 			storeValue('token', res.jwt);
+			storeValue('user',res.user);
+			console.log(appsmith.store.user)
 			showAlert("Login successfull");
-			navigateTo("Dashboard")
+			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
+			return res;
 		} catch {
 			showAlert("Invalid emaill/password", "error");
 		}
+		return {};
 	},
 
 	register: async () => {
@@ -45,4 +50,11 @@ export default {
 			// return showAlert('Error creating new user', 'error');
 		// }
 	},
+	async getRole() {
+		const res = await GetUser.run();
+		const result = res[0].role.name;
+		storeValue('role', result);
+		return result;
+	}
+	
 }

@@ -15,6 +15,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "navigateToEOP"
+    },
+    {
+      "key": "navigateToDashboard"
     }
   ],
   "dynamicTriggerPathList": [
