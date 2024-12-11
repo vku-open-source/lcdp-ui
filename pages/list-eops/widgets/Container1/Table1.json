@@ -300,7 +300,7 @@
       "width": 150
     },
     "customColumn2": {
-      "alias": "",
+      "alias": "Sau thiên tai",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -327,7 +327,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "",
+      "label": "Sau thiên tai",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{showModal(ReportModal.name);\nstoreValue('ReportContent', Report.QueryExistReportEOP.data[currentRow.id]);}}",
@@ -340,7 +340,7 @@
       "width": 150
     },
     "customColumn3": {
-      "alias": "",
+      "alias": "Sau thiên tai",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -366,7 +366,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "",
+      "label": "Sau thiên tai",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{Report.GenerateReport(currentRow.id);}}",
