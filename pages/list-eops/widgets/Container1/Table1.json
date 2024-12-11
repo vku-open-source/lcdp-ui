@@ -359,7 +359,7 @@
       "id": "customColumn3",
       "index": 10,
       "isCellEditable": false,
-      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role && appsmith.store.role === \"Admin\"))}}",
+      "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.role === \"Admin\"))}}",
       "isDerived": true,
       "isDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( Report.QueryExistReportEOP.data[currentRow.id] !== undefined))}}",
       "isDiscardVisible": true,
