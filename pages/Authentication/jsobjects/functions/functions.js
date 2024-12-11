@@ -26,14 +26,13 @@ export default {
 
 			showAlert("Login successfull");
 			
-			await this.getRole();
-			// await this.getRole();
-			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
-			return res;
+			const role = await this.getRole();
+			storeValue("role", role);
+
+			navigateTo('Dashboard', {}, 'SAME_WINDOW');
 		} catch {
 			showAlert("Invalid emaill/password", "error");
 		}
-		return {};
 	},
 
 	register: async () => {
@@ -56,7 +55,6 @@ export default {
 		const res = await GetUser.run();
 		const result = res[0].role.name;
 		storeValue('role', result);
-		showAlert(JSON.stringify(result))
 		return result;
 	}
 	
