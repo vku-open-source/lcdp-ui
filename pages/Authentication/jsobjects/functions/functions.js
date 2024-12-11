@@ -26,6 +26,7 @@ export default {
 			storeValue('user',res.user);
 			console.log(appsmith.store.user)
 			showAlert("Login successfull");
+			await this.getRole().run();
 			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
 			return res;
 		} catch {
