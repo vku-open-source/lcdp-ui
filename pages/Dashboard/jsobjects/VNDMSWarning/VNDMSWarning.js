@@ -2,7 +2,7 @@ export default {
   async getVNDMSWarningList() {
     let VNDMSWarningList = await vndms_warnings.run();
     let response = VNDMSWarningList.data;
-
+		console.log(response)
     // Cập nhật regex
     const sourceRegex = /detailrain\(`\d+`,`([^`]+)`/;
     const siteRegex = /detailrain\(`(\d+)`,/;

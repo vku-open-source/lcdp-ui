@@ -13,24 +13,35 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "plus",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "2jt5i7rnoy",
-  "leftColumn": 27,
+  "leftColumn": 60,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 27,
   "mobileRightColumn": 31,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onClick": "{{navigateTo(\"admin_list_volunteer\")}}",
   "parentColumnSpace": 13.171875,
   "parentId": "34d4027ksx",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 31,
+  "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
