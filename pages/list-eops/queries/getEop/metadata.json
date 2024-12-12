@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_d590dc2f-6f8e-4793-af52-9c432bbd6c4f",
-  "id": "list-eops_get_eops",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_99cf6af7-03f3-4001-b8c1-cb495d50b2b9",
+  "id": "list-eops_getEop",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,18 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eops",
+      "path": "/eops/{{this.params.documentId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "sort[0]",
-          "value": "createdAt:desc"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -37,9 +32,13 @@
       "name": "strapi",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "get_eops",
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "getEop",
     "pageId": "list-eops",
     "userSetOnLoad": false
   }

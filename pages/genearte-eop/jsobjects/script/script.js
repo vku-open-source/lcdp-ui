@@ -27,7 +27,11 @@ export default  {
 				location: item.location
 			})
 		)
-		console.log(111, floodData, sosAlertData)
+		
+		const resSupplies = await getSupplies.run()
+		const suppliesData = resSupplies.data.map(item => `${item.name}, Số lượng: ${item.quantity}`).join('\n')
+		
+		console.log(111, floodData, sosAlertData, suppliesData)
 		// console.log(222, `
 // ${JSON.stringify(floodData)}
 // 
@@ -43,7 +47,7 @@ ${JSON.stringify(sosAlertData)}
 
 ${otherInfo.text}
 			`,
-			resourceData: resourceInput.text
+			resourceData: suppliesData
 		})
 		
 		console.log(generateEOPRes)

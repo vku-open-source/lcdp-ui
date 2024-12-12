@@ -66,11 +66,19 @@
       "isDefault": false
     },
     {
-      "id": "admin_add_goods",
+      "id": "admin_list_goods",
+      "isDefault": false
+    },
+    {
+      "id": "admin_list_volunteer",
       "isDefault": false
     },
     {
       "id": "admin_add_volunteer",
+      "isDefault": false
+    },
+    {
+      "id": "admin_add_goods",
       "isDefault": false
     }
   ],

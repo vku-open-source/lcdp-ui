@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_18872562-53f1-4c5a-8168-20d83a9d6d0d",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_4324a71a-60bd-4a9b-8863-a2857337d1c7",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 440,
+          "bottomRow": 1130,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 670,
+          "minHeight": 870,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 65,
+          "snapRows": 85,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "admin_add_goods",
-    "slug": "admin-add-goods"
+    "name": "admin_list_goods",
+    "slug": "admin-list-goods"
   }
 }

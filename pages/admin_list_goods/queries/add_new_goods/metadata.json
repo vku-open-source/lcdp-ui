@@ -1,6 +1,6 @@
 {
   "gitSyncId": "674b5eaa29bd2146155b36c6_dbe9c8fe-c944-42a2-985d-348a4f2caf65",
-  "id": "admin_add_goods_add_new_goods",
+  "id": "admin_list_goods_add_new_goods",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -47,7 +47,7 @@
     ],
     "executeOnLoad": false,
     "name": "add_new_goods",
-    "pageId": "admin_add_goods",
+    "pageId": "admin_list_goods",
     "userSetOnLoad": false
   }
 }

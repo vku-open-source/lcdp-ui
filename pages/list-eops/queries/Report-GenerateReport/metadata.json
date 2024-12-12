@@ -8,8 +8,8 @@
       "encodeParamsToggle": true,
       "jsArguments": [
         {
-          "name": "id",
-          "value": "{{13}}"
+          "name": "documentId",
+          "value": "ikydoju54xenllrv4t1rsx2i"
         }
       ],
       "paginationType": "NONE",

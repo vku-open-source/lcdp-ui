@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 58,
+  "bottomRow": 59,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultText": "{{appsmith.store.ReportContent.Content}}",
   "dynamicBindingPathList": [
@@ -23,11 +23,12 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
+  "isToolbarHidden": true,
   "isVisible": true,
   "key": "rxs5yuuroa",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

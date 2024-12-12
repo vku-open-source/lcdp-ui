@@ -1,0 +1,12 @@
+{   
+    "inputs": {
+        "EOP": {{this.params.eop}},
+        "TASKS": {{this.params.tasks}}
+    },
+    "query": "write a report",
+    "response_mode": "blocking",
+    "conversation_id": "",
+    "user": "test",
+    "files": [
+    ]
+}

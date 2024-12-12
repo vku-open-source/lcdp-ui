@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_d590dc2f-6f8e-4793-af52-9c432bbd6c4f",
-  "id": "list-eops_get_eops",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_e32dc268-db78-46c6-ba90-45ac37e7be3e",
+  "id": "admin_add_goods_getSupplies",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,18 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eops",
+      "path": "/goods-supplies",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "sort[0]",
-          "value": "createdAt:desc"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -39,8 +34,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "get_eops",
-    "pageId": "list-eops",
+    "name": "getSupplies",
+    "pageId": "admin_add_goods",
     "userSetOnLoad": false
   }
 }

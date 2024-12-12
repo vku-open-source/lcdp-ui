@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_d590dc2f-6f8e-4793-af52-9c432bbd6c4f",
-  "id": "list-eops_get_eops",
+  "gitSyncId": "674b5eaa29bd2146155b36c6_50311aa2-999f-49f4-a1a0-2b1a4ee6a52a",
+  "id": "admin_add_volunteer_getVolunteers",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eops",
+      "path": "/users",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -24,8 +24,12 @@
       ],
       "queryParameters": [
         {
-          "key": "sort[0]",
-          "value": "createdAt:desc"
+          "key": "populate",
+          "value": "role"
+        },
+        {
+          "key": "filters[role][id][$eq]",
+          "value": "4"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -39,8 +43,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "get_eops",
-    "pageId": "list-eops",
+    "name": "getVolunteers",
+    "pageId": "admin_add_volunteer",
     "userSetOnLoad": false
   }
 }
