@@ -38,6 +38,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{script.doneTask(taskList.selectedRow)}}",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "parentId": "efmb6aeevi",
   "placement": "CENTER",
   "recaptchaType": "V3",
