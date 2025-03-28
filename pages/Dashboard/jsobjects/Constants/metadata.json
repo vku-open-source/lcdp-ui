@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "BACKEND_BASE_URL",
-        "value": "'http://34.67.28.143:1337'"
+        "value": "'http://tap.sigconn.sbs:1337'"
       }
     ]
   }
