@@ -1,11 +1,4 @@
-{   
-    "inputs": {
-        "FLOOD_DATA": {{inp_flood.text}},
-        "RESOURCE_DATA": {{inp_resource.text}}
-    },
-    "query": "give me task list",
-    "response_mode": "streaming",
-    "conversation_id": "",
-    "user": "test",
-    "files": []
+{
+	"flooodData": {{ inp_flood.text }},
+	"resourceData": {{inp_resource.text}}
 }
