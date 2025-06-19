@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{get_eop.data.data.content}}",
+  "defaultText": "{{appsmith.URL.queryParams.documentId ? get_eop.data.data.content : \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -24,11 +24,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
+  "isToolbarHidden": false,
   "isVisible": true,
   "key": "tzb5s6py5t",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Bảng Kế hoạch khẩn cấp (Nháp)",
+  "labelTooltip": "",
   "labelWidth": 5,
   "leftColumn": 1,
   "maxDynamicHeight": 9000,

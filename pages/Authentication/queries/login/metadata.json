@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/auth/local",
+      "path": "/api/auth/local",
       "pluginSpecifiedTemplates": [
         {
           "value": true
