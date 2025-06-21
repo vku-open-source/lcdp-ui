@@ -45,9 +45,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "dify_generate_task_from_eop",
     "pageId": "genearte-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

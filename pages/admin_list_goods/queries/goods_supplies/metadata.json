@@ -33,9 +33,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "goods_supplies",
     "pageId": "admin_list_goods",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

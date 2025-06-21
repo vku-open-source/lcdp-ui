@@ -42,9 +42,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "ApproveEmergencyAlert",
     "pageId": "admin_confirm_post",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

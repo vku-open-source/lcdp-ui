@@ -38,9 +38,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "update_community",
     "pageId": "community",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

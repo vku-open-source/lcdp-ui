@@ -46,9 +46,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_eop_tasks",
     "pageId": "confirm-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
