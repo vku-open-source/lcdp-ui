@@ -1,4 +1,4 @@
 {
-	"eopId": {{appsmith.URL.queryParams.documentId}},
+	"eopId": {{get_eop.data.data.id}},
 	"content": {{editor.text}}
 }
