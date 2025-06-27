@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eop-tasks",
+      "path": "/api/eop-tasks",
       "pluginSpecifiedTemplates": [
         {
           "value": true

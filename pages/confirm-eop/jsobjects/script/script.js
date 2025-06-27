@@ -21,23 +21,25 @@ export default {
 			return;
 		}
 		
-		const res = await confirm_eop.run()
+		// const res = await confirm_eop.run()
+		// 
+		// const resEopTasks = await get_eop_tasks.run()
+		// const eopTasks = resEopTasks.data
+		// 
+  // const eopTasksStr = eopTasks.map((task) => {
+    // return `Nhiệm vụ ID: ${task.id}\nƯu tiên: ${task.priority}\nMô tả: ${task.description}\nVị trí: ${task.location}\nTài nguyên cần thiết: ${task.resources_needed}\n---`;
+  // }).join('\n\n');
+// 
+		// // send EOP to rocket.chat
+		// await sendMessageToRocket.run({
+			// content: res.data.content
+		// })
+		// 
+		// await sendMessageToRocket.run({
+			// content: eopTasksStr
+		// })
 		
-		const resEopTasks = await get_eop_tasks.run()
-		const eopTasks = resEopTasks.data
-		
-  const eopTasksStr = eopTasks.map((task) => {
-    return `Nhiệm vụ ID: ${task.id}\nƯu tiên: ${task.priority}\nMô tả: ${task.description}\nVị trí: ${task.location}\nTài nguyên cần thiết: ${task.resources_needed}\n---`;
-  }).join('\n\n');
-
-		// send EOP to rocket.chat
-		await sendMessageToRocket.run({
-			content: res.data.content
-		})
-		
-		await sendMessageToRocket.run({
-			content: eopTasksStr
-		})
+		const eop = await get_eop.data;
 		
 		navigateTo('confirmed-eop', {
 			documentId
