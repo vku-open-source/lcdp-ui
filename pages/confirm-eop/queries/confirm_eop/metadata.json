@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/resource/confirm-eop",
+      "path": "/api/resource/confirm-eop",
       "pluginSpecifiedTemplates": [
         {
           "value": true

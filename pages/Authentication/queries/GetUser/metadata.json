@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/users",
+      "path": "/api/users",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -42,6 +42,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [
+      {
+        "key": "path"
+      },
       {
         "key": "queryParameters[0].value"
       }
