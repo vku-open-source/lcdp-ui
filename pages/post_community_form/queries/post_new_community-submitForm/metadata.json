@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "post_new_community.submitForm",
     "name": "submitForm",
     "pageId": "post_community_form",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
