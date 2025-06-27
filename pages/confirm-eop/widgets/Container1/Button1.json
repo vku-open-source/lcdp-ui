@@ -31,7 +31,7 @@
   "mobileRightColumn": 61,
   "mobileTopRow": 75,
   "needsErrorInfo": false,
-  "onClick": "{{script.confirmEOP();}}",
+  "onClick": "{{confirm_eop.run()}}",
   "parentColumnSpace": 13.140625,
   "parentId": "i9nfjcanrl",
   "parentRowSpace": 10,

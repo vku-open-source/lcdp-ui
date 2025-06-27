@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"eopId\": {{appsmith.URL.queryParams.documentId}},\n\t\"content\": {{editor.text}}\n}",
+      "body": "{\n\t\"eopId\": {{get_eop.data.data.id}},\n\t\"content\": {{editor.text}}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

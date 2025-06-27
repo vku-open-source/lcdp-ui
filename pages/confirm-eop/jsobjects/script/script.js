@@ -39,7 +39,10 @@ export default {
 			// content: eopTasksStr
 		// })
 		
-		const eop = await get_eop.data;
+		const eop = await get_eop.data.data;
+		const eopId = eop.id;
+		
+		
 		
 		navigateTo('confirmed-eop', {
 			documentId
