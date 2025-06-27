@@ -29,7 +29,8 @@ export default {
 			const role = await this.getRole();
 			storeValue("role", role);
 
-			navigateTo('Dashboard', {}, 'SAME_WINDOW');
+			// navigateTo('Dashboard', {}, 'SAME_WINDOW');
+			navigateTo("Dashboard")
 		} catch {
 			showAlert("Invalid emaill/password", "error");
 		}
@@ -53,6 +54,7 @@ export default {
 	},
 	async getRole() {
 		const res = await GetUser.run();
+		console.log({res})
 		const result = res[0].role.name;
 		storeValue('role', result);
 		return result;

@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"floodData\": {{this.params.floodData}},\n    \"resourceData\": {{this.params.resourceData}}\n}",
+      "body": "{\n\t\"dateFrom\": {{dateFrom.formattedDate}},\n\t\"dateTo\": {{dateTo.formattedDate}}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/resource/generate-eop",
+      "path": "/api/resource/generate-eop",
       "pluginSpecifiedTemplates": [
         {
           "value": true

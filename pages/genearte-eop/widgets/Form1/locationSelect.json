@@ -42,6 +42,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
   "parentColumnSpace": 12.3291015625,
   "parentId": "dqcodtcsua",
   "parentRowSpace": 10,

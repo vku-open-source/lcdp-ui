@@ -21,7 +21,7 @@
       "httpMethod": "PUT",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/communities/ere2wdi8m7emsqp0u9jzhvlw",
+      "path": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -10,12 +10,6 @@ export default {
 		}) 
 		console.log(res, documentId)
 		
-		// if(!res.data.draft) { 
-			// showAlert("Bảng kế hoạch này đã được xác nhận trước đó!")
-			// navigateTo("list-eops");
-			// return;
-		// }
-		// 
 		return res.data.content
 	},
 	

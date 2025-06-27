@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 750,
+      "minHeight": 650,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -80,5 +80,5 @@
   "version": 2,
   "widgetId": "n0j48x6bq2",
   "widgetName": "Chat",
-  "width": 1242.6
+  "width": 834.0999999999999
 }
