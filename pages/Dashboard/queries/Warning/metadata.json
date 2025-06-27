@@ -39,9 +39,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "Warning",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -42,9 +42,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_eop",
     "pageId": "confirm-eop",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

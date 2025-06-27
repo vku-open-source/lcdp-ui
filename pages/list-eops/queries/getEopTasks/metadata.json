@@ -49,9 +49,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "getEopTasks",
     "pageId": "list-eops",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

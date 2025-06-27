@@ -36,6 +36,7 @@
     "executeOnLoad": false,
     "name": "get_AllCommunity",
     "pageId": "community",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

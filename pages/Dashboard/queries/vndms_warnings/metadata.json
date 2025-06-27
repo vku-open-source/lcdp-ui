@@ -48,9 +48,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "vndms_warnings",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

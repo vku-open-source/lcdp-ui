@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "script.generateEOP",
     "name": "generateEOP",
     "pageId": "genearte-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
