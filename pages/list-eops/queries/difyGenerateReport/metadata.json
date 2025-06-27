@@ -49,9 +49,9 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "name": "difyGenerateReport",
     "pageId": "list-eops",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

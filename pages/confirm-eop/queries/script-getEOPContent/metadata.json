@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "fullyQualifiedName": "script.getEOPContent",
     "name": "getEOPContent",
     "pageId": "confirm-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -49,9 +49,9 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "name": "dify_generate_eop",
     "pageId": "genearte-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

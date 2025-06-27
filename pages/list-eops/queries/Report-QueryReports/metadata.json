@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "fullyQualifiedName": "Report.QueryReports",
     "name": "QueryReports",
     "pageId": "list-eops",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

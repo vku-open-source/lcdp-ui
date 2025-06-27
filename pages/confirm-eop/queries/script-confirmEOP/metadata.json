@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "fullyQualifiedName": "script.confirmEOP",
     "name": "confirmEOP",
     "pageId": "confirm-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
