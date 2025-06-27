@@ -13,11 +13,12 @@ export default {
 			return `Nhiệm vụ ID: ${task.id}\nƯu tiên: ${task.priority}\nMô tả: ${task.description}\nVị trí: ${task.location}\nTài nguyên cần thiết: ${task.resources_needed}\n---`;
 		}).join('\n\n');
 		
-		const res = await difyGenerateReport.run({
-			eop,
-			tasks
-		})
-		const answer = res.answer;
+		ReportPrompt.queryPrompt = ReportPrompt.prompt;
+		ReportPrompt.queryPrompt = ReportPrompt.queryPrompt
+		.replace('{{EOP}}', eop)
+		.replace('{{{TASKS}}}', tasks);
+		const res = await chatbot.run();
+		const answer = res.data.answer;
 
 		
 		await createReport.run({

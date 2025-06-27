@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674b5eaa29bd2146155b36c6_0375b418-1fdc-4f4b-a2ff-907075204352",
-  "id": "confirmed-eop_get_eop_tasks",
+  "gitSyncId": "67e571e0af95d24f5449f219_a4ba3d09-486f-4550-98db-7b4539205113",
+  "id": "list-eops_chatbot",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,37 +11,24 @@
           "value": "application/json"
         }
       ],
-      "body": "",
+      "body": "{\n\t\"data\" : {\n\t\t\"question\": {{ReportPrompt.queryPrompt}}\n\t}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       },
       "headers": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/api/eop-tasks",
+      "path": "/api/chatbots",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "populate",
-          "value": "eop"
-        },
-        {
-          "key": "filters[eop][documentId][$eq]",
-          "value": "{{appsmith.URL.queryParams.documentId}}"
-        },
-        {
-          "key": "status",
-          "value": "draft"
-        }
-      ],
-      "timeoutInMillisecond": 10000
+      "queryParameters": [],
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -52,15 +39,12 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "path"
-      },
-      {
-        "key": "queryParameters[1].value"
+        "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "get_eop_tasks",
-    "pageId": "confirmed-eop",
+    "executeOnLoad": false,
+    "name": "chatbot",
+    "pageId": "list-eops",
     "userSetOnLoad": false
   }
 }

@@ -1,0 +1,5 @@
+{
+	"data" : {
+		"question": {{ReportPrompt.queryPrompt}}
+	}
+}

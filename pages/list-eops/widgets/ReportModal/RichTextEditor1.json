@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 59,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{appsmith.store.ReportContent.Content}}",
+  "defaultText": "{{appsmith.store.ReportContent.eop.content}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"

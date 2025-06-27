@@ -21,16 +21,18 @@ export default {
 			return;
 		}
 		
-		// const res = await confirm_eop.run()
-		// 
+		const res = await confirm_eop.run()
+		
 		// const resEopTasks = await get_eop_tasks.run()
 		// const eopTasks = resEopTasks.data
+		
+		// const eopTasks = res.data.tasks;
 		// 
   // const eopTasksStr = eopTasks.map((task) => {
     // return `Nhiệm vụ ID: ${task.id}\nƯu tiên: ${task.priority}\nMô tả: ${task.description}\nVị trí: ${task.location}\nTài nguyên cần thiết: ${task.resources_needed}\n---`;
   // }).join('\n\n');
-// 
-		// // send EOP to rocket.chat
+
+		// send EOP to rocket.chat
 		// await sendMessageToRocket.run({
 			// content: res.data.content
 		// })
@@ -38,12 +40,7 @@ export default {
 		// await sendMessageToRocket.run({
 			// content: eopTasksStr
 		// })
-		
-		const eop = await get_eop.data.data;
-		const eopId = eop.id;
-		
-		
-		
+		// 
 		navigateTo('confirmed-eop', {
 			documentId
 		})

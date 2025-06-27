@@ -22,7 +22,16 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "filters[type][$ne]",
+          "value": "emergency_alert"
+        },
+        {
+          "key": "populate",
+          "value": "*"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,

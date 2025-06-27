@@ -46,14 +46,15 @@
     "location",
     "metadata"
   ],
-  "columnUpdatedAt": 1751037900578,
+  "columnUpdatedAt": 1751041498570,
   "columnWidthMap": {
     "content": 409,
     "createdAt": 127,
     "customColumn1": 60,
     "customColumn3": 137,
     "draft": 80,
-    "id": 60
+    "id": 60,
+    "metadata": 167
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -185,8 +186,8 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 59,
-  "originalTopRow": 6,
+  "originalBottomRow": 57,
+  "originalTopRow": 4,
   "parentColumnSpace": 12.75048828125,
   "parentId": "2nowas76lx",
   "parentRowSpace": 10,
