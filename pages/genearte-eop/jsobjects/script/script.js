@@ -1,62 +1,66 @@
 export default  {
 	async generateEOP() {
 		// 1. get flood data by date from/to and location -> using api
-	 	const res = await get_nchmf_warnings.run({
-			dateFrom: dateFrom.formattedDate,
-			dateTo: dateTo.formattedDate
-		})
-		
-		const floodData = res.data.map(
-			item => item.data.map(e => ({
-				province: e.label,
-				water_level: e.water_level,
-				warning_type: e.warning_type,
-				warning_level: e.warning_level
-			}))
-		).flat()
-		
-		const resSosAlert = await getSosAlert.run({
-					dateFrom: dateFrom.formattedDate,
-			dateTo: dateTo.formattedDate	
-		})
-		
-		const sosAlertData = resSosAlert.data.map(
-			item => ({
-				title: item.title,
-				content: item.content,
-				location: item.location
-			})
-		)
-		
-		const resSupplies = await getSupplies.run()
-		const suppliesData = resSupplies.data.map(item => `${item.name}, Số lượng: ${item.quantity}`).join('\n')
-		
-		console.log(111, floodData, sosAlertData, suppliesData)
-		// console.log(222, `
+	 	// const res = await get_nchmf_warnings.run({
+			// dateFrom: dateFrom.formattedDate,
+			// dateTo: dateTo.formattedDate
+		// })
+		// 
+		// const floodData = res.data.map(
+			// item => item.data.map(e => ({
+				// province: e.label,
+				// water_level: e.water_level,
+				// warning_type: e.warning_type,
+				// warning_level: e.warning_level
+			// }))
+		// ).flat()
+		// 
+		// const resSosAlert = await getSosAlert.run({
+					// dateFrom: dateFrom.formattedDate,
+			// dateTo: dateTo.formattedDate	
+		// })
+		// 
+		// const sosAlertData = resSosAlert.data.map(
+			// item => ({
+				// title: item.title,
+				// content: item.content,
+				// location: item.location
+			// })
+		// )
+		// 
+		// const resSupplies = await getSupplies.run()
+		// const suppliesData = resSupplies.data.map(item => `${item.name}, Số lượng: ${item.quantity}`).join('\n')
+		// 
+		// console.log(111, floodData, sosAlertData, suppliesData)
+		// // console.log(222, `
+// // ${JSON.stringify(floodData)}
+// // 
+// // ${JSON.stringify(sosAlertData)}
+// // 
+// // ${otherInfo.text}
+		// // `)
+		// const generateEOPRes = await generate_eop.run({
+			// floodData: `
 // ${JSON.stringify(floodData)}
 // 
 // ${JSON.stringify(sosAlertData)}
 // 
 // ${otherInfo.text}
-		// `)
-		const generateEOPRes = await generate_eop.run({
-			floodData: `
-${JSON.stringify(floodData)}
-
-${JSON.stringify(sosAlertData)}
-
-${otherInfo.text}
-			`,
-			resourceData: suppliesData
-		})
+			// `,
+			// resourceData: suppliesData
+		// })
+		// 
+		// console.log(generateEOPRes)
+		// 
 		
-		console.log(generateEOPRes)
+		
+		const res = await generate_eop.run()
 		
 		navigateTo('confirm-eop', {
-			documentId: generateEOPRes.data.documentId
+			documentId: res.data.documentId
 		})
 		
-		return generateEOPRes.data
+		return res.data
 	},
 
 }

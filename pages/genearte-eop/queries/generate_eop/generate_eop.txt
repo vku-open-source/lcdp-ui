@@ -1,4 +1,4 @@
 {
-    "floodData": {{this.params.floodData}},
-    "resourceData": {{this.params.resourceData}}
+	"dateFrom": {{dateFrom.formattedDate}},
+	"dateTo": {{dateTo.formattedDate}}
 }

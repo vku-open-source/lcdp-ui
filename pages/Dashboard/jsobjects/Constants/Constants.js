@@ -1,3 +1,3 @@
 export default {
-	BACKEND_BASE_URL: 'https://apiemx.sigconn.shop' 
+	BACKEND_BASE_URL: 'http://tap.sigconn.sbs:1337' 
 }

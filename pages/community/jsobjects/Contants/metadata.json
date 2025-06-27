@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67e571e0af95d24f5449f219_1cd1022a-6dd9-46af-b6cb-4878ec6dcd55",
+  "id": "community_Contants",
+  "unpublishedCollection": {
+    "name": "Contants",
+    "pageId": "community",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "BACKEND_BASE_URL",
+        "value": "'http://tap.sigconn.sbs/'"
+      }
+    ]
+  }
+}

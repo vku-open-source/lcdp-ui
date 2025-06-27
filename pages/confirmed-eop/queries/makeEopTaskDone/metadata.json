@@ -21,7 +21,7 @@
       "httpMethod": "PUT",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/eop-tasks/{{this.params.taskDocumentId}}",
+      "path": "/api/eop-tasks/{{this.params.taskDocumentId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true

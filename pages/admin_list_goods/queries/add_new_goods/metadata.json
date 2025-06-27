@@ -21,7 +21,7 @@
       "httpMethod": "PUT",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/goods-supplies/{{goods_supplies.data.data[0].documentId}}",
+      "path": "/api/goods-supplies/{{goods_supplies.data.data[0].documentId}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true

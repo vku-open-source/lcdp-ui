@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "BACKEND_BASE_URL",
-        "value": "'https://apiemx.sigconn.shop'"
+        "value": "'http://tap.sigconn.sbs:1337'"
       }
     ]
   }
