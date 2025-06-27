@@ -33,12 +33,11 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-<<<<<<< HEAD:pages/community/queries/getAllcommunity/metadata.json
+
     "name": "getAllcommunity",
-=======
     "executeOnLoad": false,
     "name": "get_AllCommunity",
->>>>>>> resolve:pages/community/queries/get_AllCommunity/metadata.json
+
     "pageId": "community",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
