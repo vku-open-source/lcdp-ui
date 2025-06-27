@@ -42,9 +42,9 @@
         "key": "path"
       }
     ],
+    "executeOnLoad": false,
     "name": "get_eop",
     "pageId": "genearte-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -37,9 +37,9 @@
         "key": "path"
       }
     ],
+    "executeOnLoad": false,
     "name": "getEop",
     "pageId": "list-eops",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

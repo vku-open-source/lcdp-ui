@@ -47,9 +47,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
+    "executeOnLoad": true,
     "name": "GetEmergencyAlerts",
     "pageId": "admin_confirm_post",
-    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

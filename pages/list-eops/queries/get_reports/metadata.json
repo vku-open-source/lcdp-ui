@@ -33,9 +33,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
+    "executeOnLoad": false,
     "name": "get_reports",
     "pageId": "list-eops",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

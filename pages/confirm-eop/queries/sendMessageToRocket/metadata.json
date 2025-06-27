@@ -42,9 +42,9 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "name": "sendMessageToRocket",
     "pageId": "confirm-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

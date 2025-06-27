@@ -42,9 +42,9 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "name": "register",
     "pageId": "Authentication",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

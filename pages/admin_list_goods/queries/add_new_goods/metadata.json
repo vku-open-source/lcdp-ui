@@ -45,9 +45,9 @@
         "key": "path"
       }
     ],
+    "executeOnLoad": false,
     "name": "add_new_goods",
     "pageId": "admin_list_goods",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

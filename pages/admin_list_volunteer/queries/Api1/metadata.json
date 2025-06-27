@@ -49,9 +49,9 @@
       "name": "strapi",
       "pluginId": "restapi-plugin"
     },
+    "executeOnLoad": false,
     "name": "Api1",
     "pageId": "admin_list_volunteer",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

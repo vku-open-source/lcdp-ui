@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
+    "executeOnLoad": false,
     "fullyQualifiedName": "CommunityObject.getDate7",
     "name": "getDate7",
     "pageId": "Dashboard",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

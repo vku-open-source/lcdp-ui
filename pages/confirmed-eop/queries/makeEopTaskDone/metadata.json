@@ -42,9 +42,9 @@
         "key": "path"
       }
     ],
+    "executeOnLoad": false,
     "name": "makeEopTaskDone",
     "pageId": "confirmed-eop",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -45,9 +45,9 @@
         "key": "queryParameters[0].value"
       }
     ],
+    "executeOnLoad": false,
     "name": "ReportByID",
     "pageId": "list-eops",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

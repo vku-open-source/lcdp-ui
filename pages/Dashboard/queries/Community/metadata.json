@@ -52,9 +52,9 @@
         "key": "queryParameters[2].value"
       }
     ],
+    "executeOnLoad": false,
     "name": "Community",
     "pageId": "Dashboard",
-    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
