@@ -3,11 +3,11 @@
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
   "borderWidth": "1",
-  "bottomRow": 43,
+  "bottomRow": 41,
   "boxShadow": "NONE",
   "children": [
     {
-      "bottomRow": 430,
+      "bottomRow": 410,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,

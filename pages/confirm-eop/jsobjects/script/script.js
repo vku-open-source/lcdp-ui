@@ -40,6 +40,7 @@ export default {
 		// })
 		
 		const eop = await get_eop.data;
+		const eopId = eop.id;
 		
 		navigateTo('confirmed-eop', {
 			documentId
