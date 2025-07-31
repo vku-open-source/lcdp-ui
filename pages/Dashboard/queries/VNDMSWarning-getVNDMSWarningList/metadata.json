@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "VNDMSWarning.getVNDMSWarningList",
     "name": "getVNDMSWarningList",
     "pageId": "Dashboard",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

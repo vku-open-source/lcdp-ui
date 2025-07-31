@@ -42,9 +42,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "chatbot",
     "pageId": "list-eops",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

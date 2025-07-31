@@ -52,9 +52,9 @@
         "key": "queryParameters[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "get_nchmf_warnings",
     "pageId": "genearte-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

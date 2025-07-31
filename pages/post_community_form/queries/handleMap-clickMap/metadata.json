@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "handleMap.clickMap",
     "name": "clickMap",
     "pageId": "post_community_form",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

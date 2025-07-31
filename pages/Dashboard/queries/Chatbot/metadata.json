@@ -47,9 +47,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Chatbot",
     "pageId": "Dashboard",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

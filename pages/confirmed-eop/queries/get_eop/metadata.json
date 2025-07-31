@@ -37,9 +37,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": true,
     "name": "get_eop",
     "pageId": "confirmed-eop",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

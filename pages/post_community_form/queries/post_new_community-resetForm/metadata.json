@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "post_new_community.resetForm",
     "name": "resetForm",
     "pageId": "post_community_form",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

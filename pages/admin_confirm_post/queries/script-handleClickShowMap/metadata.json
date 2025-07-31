@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "script.handleClickShowMap",
     "name": "handleClickShowMap",
     "pageId": "admin_confirm_post",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

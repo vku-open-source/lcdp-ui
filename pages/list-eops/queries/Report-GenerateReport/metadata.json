@@ -28,10 +28,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Report.GenerateReport",
     "name": "GenerateReport",
     "pageId": "list-eops",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

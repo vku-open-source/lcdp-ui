@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "script.doneTask",
     "name": "doneTask",
     "pageId": "confirmed-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

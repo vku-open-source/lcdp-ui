@@ -38,9 +38,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "get_eop",
     "pageId": "genearte-eop",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
